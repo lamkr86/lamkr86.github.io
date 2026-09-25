@@ -8,7 +8,7 @@ permalink: /
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   }
 
   .header-flex {
@@ -20,12 +20,12 @@ permalink: /
   }
 
   /* -------------------------------------------------------------
-     1. MẶC ĐỊNH CHO LIGHT MODE (VIỀN MẢNH TINH TẾ)
+     1. GIAO DIỆN SÁNG (LIGHT MODE) - CHUẨN VERCEL / NOTION
      ------------------------------------------------------------- */
   .academic-container .txt-main,
   .academic-container h1,
   .academic-container strong {
-    color: #111827 !important;
+    color: #0f172a !important;
     opacity: 1 !important;
   }
 
@@ -33,52 +33,53 @@ permalink: /
   .academic-container p,
   .academic-container li,
   .academic-container td {
-    color: #374151 !important;
+    color: #334155 !important;
     opacity: 1 !important;
   }
 
   .academic-container .txt-muted {
-    color: #6b7280 !important;
+    color: #64748b !important;
     opacity: 1 !important;
   }
 
-  /* Viền ảnh mảnh dẻ */
+  /* Avatar tròn tinh tế */
   .academic-container .avatar-img {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
-  /* Đường kẻ gạch ngang tiêu đề mảnh 1px */
+  /* Kẻ ngang phân mục siêu thanh thoát */
   .academic-container .section-heading {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #111827 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    color: #0f172a !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     padding-bottom: 8px;
     margin-top: 35px;
     margin-bottom: 18px;
     opacity: 1 !important;
   }
 
-  /* KHUNG BẢNG: VIỀN XÁM MẢNH 1PX TINH TẾ, BỎ HOÀN TOÀN KẺ CỘT */
+  /* KHUNG CARD/TABLE: CHUẨN MODERN BO 12PX + BÓNG MỜ SIÊU MỊN */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1px solid rgba(0, 0, 0, 0.12) !important;
-    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 12px;
     overflow: hidden;
     margin-top: 12px;
-    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
   }
 
   .academic-container .styled-card-table td {
-    padding: 14px 18px;
+    padding: 16px 20px;
     vertical-align: top;
   }
 
@@ -86,35 +87,37 @@ permalink: /
     width: 26%;
     font-size: 14px;
     font-weight: 600;
-    border-right: none !important; /* Xóa bỏ tuyệt đối đường vạch giữa */
   }
 
-  /* BUTTON BO TRÒN NHẸ DẠNG SQUARE-SMOTH (NHƯ GITHUB/NOTION) */
+  /* BUTTON: NÚT HẠT ĐẬU BO TRÒN (PILL BUTTON - CHUẨN APPLE & GITHUB) */
   .academic-container .social-icon-btn {
     height: 34px;
-    padding: 0 10px;
-    border-radius: 6px; /* Bo nhẹ cực đẹp */
-    border: 1px solid rgba(0, 0, 0, 0.18) !important;
+    padding: 0 14px;
+    border-radius: 9999px; /* Bo hạt đậu siêu mượt */
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
     background-color: #ffffff !important;
-    color: #111827 !important;
+    color: #0f172a !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none !important;
     font-size: 13px;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   }
 
   .academic-container .social-icon-btn i,
   .academic-container .social-icon-btn span {
-    color: #111827 !important;
+    color: #0f172a !important;
     opacity: 1 !important;
   }
 
   .academic-container .social-icon-btn:hover {
-    background-color: #111827 !important;
-    border-color: #111827 !important;
+    background-color: #0f172a !important;
+    border-color: #0f172a !important;
     color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   }
   
   .academic-container .social-icon-btn:hover i,
@@ -124,7 +127,7 @@ permalink: /
 
 
   /* -------------------------------------------------------------
-     2. GIAO DIỆN TỐI (DARK MODE - VIỀN MẢNH TRẮNG MỜ)
+     2. GIAO DIỆN TỐI (DARK MODE) - CHUẨN VERCEL DARK
      ------------------------------------------------------------- */
   html[data-theme="dark"] .academic-container .txt-main,
   html.dark .academic-container .txt-main,
@@ -132,7 +135,7 @@ permalink: /
   [data-theme="dark"] .academic-container .txt-main,
   html[data-theme="dark"] .academic-container h1,
   html[data-theme="dark"] .academic-container strong {
-    color: #ffffff !important;
+    color: #f8fafc !important;
   }
 
   html[data-theme="dark"] .academic-container .txt-sub,
@@ -142,28 +145,37 @@ permalink: /
   html[data-theme="dark"] .academic-container p,
   html[data-theme="dark"] .academic-container li,
   html[data-theme="dark"] .academic-container td {
-    color: #f3f4f6 !important;
+    color: #cbd5e1 !important;
   }
 
   html[data-theme="dark"] .academic-container .txt-muted {
-    color: #9ca3af !important;
+    color: #64748b !important;
   }
 
-  html[data-theme="dark"] .academic-container .avatar-img,
-  html[data-theme="dark"] .academic-container .section-heading,
+  html[data-theme="dark"] .academic-container .avatar-img {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+  }
+
+  html[data-theme="dark"] .academic-container .section-heading {
+    border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+    color: #f8fafc !important;
+  }
+
   html[data-theme="dark"] .academic-container .styled-card-table {
-    border-color: rgba(255, 255, 255, 0.2) !important;
-    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    box-shadow: none;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn {
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
     background-color: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: none;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn i,
   html[data-theme="dark"] .academic-container .social-icon-btn span {
-    color: #ffffff !important;
+    color: #f8fafc !important;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn:hover {
@@ -173,7 +185,7 @@ permalink: /
 
   html[data-theme="dark"] .academic-container .social-icon-btn:hover i,
   html[data-theme="dark"] .academic-container .social-icon-btn:hover span {
-    color: #111827 !important;
+    color: #0f172a !important;
   }
 </style>
 
@@ -184,15 +196,15 @@ permalink: /
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
     
     <div>
-      <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700;">
-        Pham Quang Lam <span class="txt-muted" style="font-size: 16px; font-weight: normal;">(범광람)</span>
+      <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
+        Pham Quang Lam <span class="txt-muted" style="font-size: 16px; font-weight: 400;">(범광람)</span>
       </h1>
-      <p class="txt-sub" style="margin: 6px 0 14px 0; font-size: 15px; line-height: 1.5;">
+      <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 15px; line-height: 1.5;">
         Undergraduate Student · Division of Computer Engineering<br>
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
-      <!-- DÀN NÚT ICON TINH TẾ -->
+      <!-- DÀN NÚT BUTTON BO PILL (HẠT ĐẬU) CAO CẤP -->
       <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
         <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
