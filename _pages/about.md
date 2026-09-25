@@ -5,61 +5,46 @@ permalink: /
 ---
 
 <style>
-  /* 1. KHỞI TẠO BỘ MÀU TƯƠNG PHẢN ĐỘNG (DYNAMIC CONTRAST) */
+  /* =========================================================
+     1. ÉP BỘ MÀU TƯƠNG PHẢN TUYỆT ĐỐI CHO CẢ LIGHT VÀ DARK MODE
+     ========================================================= */
+  
+  /* Cấu hình mặc định (Giao diện sáng - Light Mode) */
   :root {
-    --color-main: #000000;         /* Chữ chính, tiêu đề, đường kẻ, viền */
-    --color-sub: #374151;          /* Chữ phụ xám đậm cực kỳ rõ trên nền sáng */
-    --color-muted: #6b7280;        /* Ngày tháng / chữ phụ mờ */
-    --border-color: #000000;       /* Đường viền khung & viền nút */
-    --btn-bg: #ffffff;             /* Nền nút bấm */
-    --btn-hover-bg: #000000;       /* Nền nút khi di chuột */
-    --btn-hover-text: #ffffff;     /* Chữ nút khi di chuột */
+    --main-text: #000000 !important;
+    --sub-text: #374151 !important;
+    --muted-text: #4b5563 !important;
+    --border-line: #000000 !important;
+    --btn-bg: #ffffff !important;
+    --btn-text: #000000 !important;
   }
 
-  /* 2. TỰ ĐỘNG CHUYỂN SANG TRẮNG KHI Ở GIAO DIỆN TỐI (DARK MODE) */
-  @media (prefers-color-scheme: dark) {
+  /* Tự động chuyển đổi khi bật GIAO DIỆN TỐI (Dark Mode) */
+  @media (prefers-color-scheme: dark), [data-theme="dark"], body.dark, .dark, html.dark {
     :root {
-      --color-main: #ffffff;
-      --color-sub: #e5e7eb;        /* Chữ phụ xám sáng rõ nét trên nền tối */
-      --color-muted: #9ca3af;
-      --border-color: #ffffff;
-      --btn-bg: transparent;
-      --btn-hover-bg: #ffffff;
-      --btn-hover-text: #000000;
+      --main-text: #ffffff !important;      /* Chữ chính: Trắng tinh */
+      --sub-text: #e2e8f0 !important;       /* Chữ phụ: Xám trắng sáng rõ */
+      --muted-text: #cbd5e1 !important;     /* Ngày tháng: Sáng nổi bật */
+      --border-line: #ffffff !important;    /* Viền khung & Đường kẻ: Trắng */
+      --btn-bg: transparent !important;      /* Nền nút: Trong suốt */
+      --btn-text: #ffffff !important;      /* Icon nút: Trắng */
+    }
+
+    /* Ép tất cả thẻ văn bản của Theme Jekyll phải nhận màu sáng */
+    .initial-content, .page, .page__content, article, p, span, li, td, h1, h2, h3 {
+      color: var(--main-text);
+      opacity: 1 !important; /* Xóa bỏ hiệu ứng làm mờ chữ của theme */
     }
   }
 
-  /* Tương thích tuyệt đối với nút bấm đổi Theme của Jekyll */
-  [data-theme="dark"], body.dark, .dark, html.dark {
-    --color-main: #ffffff !important;
-    --color-sub: #e5e7eb !important;
-    --color-muted: #9ca3af !important;
-    --border-color: #ffffff !important;
-    --btn-bg: transparent !important;
-    --btn-hover-bg: #ffffff !important;
-    --btn-hover-text: #000000 !important;
-  }
-
-  [data-theme="light"], body.light, .light, html.light {
-    --color-main: #000000 !important;
-    --color-sub: #374151 !important;
-    --color-muted: #6b7280 !important;
-    --border-color: #000000 !important;
-    --btn-bg: #ffffff !important;
-    --btn-hover-bg: #000000 !important;
-    --btn-hover-text: #ffffff !important;
-  }
-
-  /* 3. LAYOUT & ĐỊNH DẠNG KHUNG/NÚT */
+  /* =========================================================
+     2. ĐỊNH DẠNG BỐ CỤC VÀ TẮT TÀNG HÌNH CHỮ
+     ========================================================= */
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
-
-  .text-main { color: var(--color-main) !important; }
-  .text-sub { color: var(--color-sub) !important; }
-  .text-muted { color: var(--color-muted) !important; }
 
   .header-flex {
     display: flex;
@@ -74,17 +59,17 @@ permalink: /
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--border-color) !important;
+    border: 2px solid var(--border-line) !important;
   }
 
-  /* BUTTON BO TRÒN - ĐẢO MÀU TINH TẾ KHI HOVER */
+  /* NÚT BẤM SOCIAL TƯƠNG PHẢN CHUẨN */
   .social-icon-btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1.5px solid var(--border-color) !important;
+    border: 1.5px solid var(--border-line) !important;
     background-color: var(--btn-bg) !important;
-    color: var(--color-main) !important;
+    color: var(--btn-text) !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -94,13 +79,11 @@ permalink: /
   }
 
   .social-icon-btn i, .social-icon-btn span {
-    color: inherit !important;
+    color: var(--btn-text) !important;
   }
 
   .social-icon-btn:hover {
-    background-color: var(--btn-hover-bg) !important;
-    color: var(--btn-hover-text) !important;
-    border-color: var(--border-color) !important;
+    filter: invert(1); /* Đảo ngược màu tinh tế khi di chuột */
   }
 
   /* TIÊU ĐỀ MỤC & ĐƯỜNG KẺ PHÂN CÁCH */
@@ -109,8 +92,8 @@ permalink: /
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    color: var(--color-main) !important;
-    border-bottom: 2px solid var(--border-color) !important;
+    color: var(--main-text) !important;
+    border-bottom: 2px solid var(--border-line) !important;
     padding-bottom: 6px;
     margin-top: 35px;
     margin-bottom: 16px;
@@ -121,11 +104,11 @@ permalink: /
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1.5px solid var(--border-color) !important;
+    border: 1.5px solid var(--border-line) !important;
     border-radius: 8px;
     overflow: hidden;
     margin-top: 12px;
-    background-color: transparent;
+    background-color: transparent !important;
   }
 
   .styled-card-table td {
@@ -135,10 +118,15 @@ permalink: /
 
   .styled-card-table td:first-child {
     width: 28%;
-    border-right: 1.5px solid var(--border-color) !important;
+    border-right: 1.5px solid var(--border-line) !important;
     font-size: 14px;
     font-weight: 600;
   }
+
+  /* LỚP MÀU CHỮ ÉP ƯU TIÊN */
+  .txt-main { color: var(--main-text) !important; }
+  .txt-sub  { color: var(--sub-text) !important; }
+  .txt-muted{ color: var(--muted-text) !important; }
 </style>
 
 <div class="academic-container">
@@ -148,15 +136,15 @@ permalink: /
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
     
     <div>
-      <h1 class="text-main" style="margin: 0; font-size: 28px; font-weight: 700;">
-        Pham Quang Lam <span class="text-muted" style="font-size: 16px; font-weight: normal;">(범광람)</span>
+      <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700;">
+        Pham Quang Lam <span class="txt-muted" style="font-size: 16px; font-weight: normal;">(범광람)</span>
       </h1>
-      <p class="text-sub" style="margin: 6px 0 14px 0; font-size: 15px; line-height: 1.5;">
+      <p class="txt-sub" style="margin: 6px 0 14px 0; font-size: 15px; line-height: 1.5;">
         Undergraduate Student · Division of Computer Engineering<br>
-        <strong class="text-main">Hansung University</strong>, Seoul, South Korea
+        <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
-      <!-- DÀN NÚT ICON -->
+      <!-- HÀNG NÚT ICON -->
       <div style="display: flex; gap: 8px; align-items: center;">
         <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
@@ -168,18 +156,18 @@ permalink: /
   </div>
 
   <!-- GIỚI THIỆU -->
-  <p class="text-sub" style="font-size: 15px; line-height: 1.7; margin-bottom: 25px;">
-    I am an undergraduate student in the Division of Computer Engineering at <strong class="text-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
+  <p class="txt-sub" style="font-size: 15px; line-height: 1.7; margin-bottom: 25px;">
+    I am an undergraduate student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
   </p>
 
-  <!-- MỤC ABOUT KHUNG VIỀN BO CONG -->
+  <!-- MỤC ABOUT -->
   <div class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
-      <td class="text-sub">2024 – Present</td>
+      <td class="txt-sub">2024 – Present</td>
       <td>
-        <strong class="text-main" style="font-size: 15px;">Hansung University</strong><br>
-        <span class="text-sub" style="font-size: 14px;">Undergraduate Student, Division of Computer Engineering</span>
+        <strong class="txt-main" style="font-size: 15px;">Hansung University</strong><br>
+        <span class="txt-sub" style="font-size: 14px;">Undergraduate Student, Division of Computer Engineering</span>
       </td>
     </tr>
   </table>
@@ -188,12 +176,12 @@ permalink: /
   <div class="section-heading">PROJECTS & ACTIVITIES</div>
   <ul style="padding-left: 18px; margin: 0; line-height: 1.7;">
     <li style="margin-bottom: 12px;">
-      <strong class="text-main">Academic Personal Website</strong> <span class="text-muted" style="font-size: 13px;">(2026)</span><br>
-      <span class="text-sub" style="font-size: 14px;">Designed and deployed a minimal academic profile hosted on GitHub Pages.</span>
+      <strong class="txt-main">Academic Personal Website</strong> <span class="txt-muted" style="font-size: 13px;">(2026)</span><br>
+      <span class="txt-sub" style="font-size: 14px;">Designed and deployed a minimal academic profile hosted on GitHub Pages.</span>
     </li>
     <li>
-      <strong class="text-main">Computer Engineering Coursework</strong><br>
-      <span class="text-sub" style="font-size: 14px;">Developing software projects and core algorithms at Hansung University.</span>
+      <strong class="txt-main">Computer Engineering Coursework</strong><br>
+      <span class="txt-sub" style="font-size: 14px;">Developing software projects and core algorithms at Hansung University.</span>
     </li>
   </ul>
 
