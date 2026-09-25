@@ -20,7 +20,7 @@ repository       : "phamquanglam/phamquanglam.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar         : "profile.png"
+  avatar         : "profile.jpg"
   name           : "Pham Quang Lam"
   pronouns       : "he/him"
   bio            : "Student"
