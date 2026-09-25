@@ -1,40 +1,56 @@
----
-layout: single
-author_profile: false
-permalink: /
----
+<!-- Style dành cho các nút tròn -->
+<style>
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .btn-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #d0d7de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #57606a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+  }
+  .btn-circle:hover {
+    border-color: #0969da;
+    color: #0969da;
+    background-color: #f6f8fa;
+  }
+</style>
 
-<div style="text-align: center; margin-bottom: 30px;">
-  <img src="/images/profile.jpg" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-  <h1 style="margin: 0; font-size: 28px; font-weight: bold;">Pham Quang Lam</h1>
-  <p style="color: #666; margin-top: 5px; font-size: 15px;">Student · Hansung University</p>
-  <div style="margin-top: 10px; font-size: 18px;">
-    <a href="mailto:lam.pham@hansung.ac.kr" style="margin: 0 8px; text-decoration: none;">✉️</a>
-    <a href="https://github.com/lamkr86" style="margin: 0 8px; text-decoration: none;">🐙</a>
-  </div>
+<!-- Danh sách các nút icons -->
+<div class="social-buttons">
+  <!-- 1. Email -->
+  <a href="mailto:26611301@hansung.ac.kr" class="btn-circle" title="Email">
+    <i class="far fa-envelope"></i>
+  </a>
+
+  <!-- 2. Google Scholar (Dành cho sinh viên/nghiên cứu) -->
+  <a href="https://scholar.google.com" target="_blank" class="btn-circle" title="Google Scholar">
+    <i class="fas fa-graduation-cap"></i>
+  </a>
+
+  <!-- 3. GitHub -->
+  <a href="https://github.com/lamkr86" target="_blank" class="btn-circle" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <!-- 4. ResearchGate (Chữ RG tròn) -->
+  <a href="https://www.researchgate.net" target="_blank" class="btn-circle" title="ResearchGate" style="font-size: 11px; font-weight: bold;">
+    RG
+  </a>
+
+  <!-- 5. LinkedIn -->
+  <a href="https://linkedin.com" target="_blank" class="btn-circle" title="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
 </div>
-
----
-
-I am currently a student at **Hansung University**. I am passionate about computer science, software engineering, and artificial intelligence. My goal is to build reliable, efficient applications and extend my knowledge through academic coursework and hands-on projects.
-
----
-
-### ABOUT
-
-<table style="width:100%; border-collapse: collapse; border: none;">
-  <tr style="border-bottom: 1px solid #eee;">
-    <td style="width: 25%; color: #666; vertical-align: top; padding: 10px 0;">2024 – Present</td>
-    <td style="padding: 10px 0;">
-      <strong>Hansung University</strong><br>
-      <span style="color: #666;">Student</span>
-    </td>
-  </tr>
-</table>
-
----
-
-### PROJECTS & PUBLICATIONS
-
-* **Coursework Project** (2026)  
-  *Software Development & Web Applications at Hansung University.*
