@@ -5,21 +5,44 @@ permalink: /
 ---
 
 <style>
-  /* =========================================================
-     1. GIAO DIỆN SÁNG (LIGHT MODE) - MẶC ĐỊNH
-     ========================================================= */
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
 
-  /* Định nghĩa màu Nền Sáng - Chữ Đen */
-  .txt-main { color: #000000 !important; }
-  .txt-sub  { color: #374151 !important; } /* Xám đậm rõ nét */
-  .txt-muted{ color: #4b5563 !important; }
+  .header-flex {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
 
-  .avatar-img {
+  /* -------------------------------------------------------------
+     1. MẶC ĐỊNH CHO LIGHT MODE (THEME AIR NỀN SÁNG)
+     ------------------------------------------------------------- */
+  .academic-container .txt-main,
+  .academic-container h1,
+  .academic-container strong {
+    color: #000000 !important;
+    opacity: 1 !important;
+  }
+
+  .academic-container .txt-sub,
+  .academic-container p,
+  .academic-container li,
+  .academic-container td {
+    color: #1a1a1a !important; /* Đen đậm nét, cực kỳ dễ đọc */
+    opacity: 1 !important;
+  }
+
+  .academic-container .txt-muted {
+    color: #4a4a4a !important;
+    opacity: 1 !important;
+  }
+
+  .academic-container .avatar-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -27,8 +50,43 @@ permalink: /
     border: 2px solid #000000 !important;
   }
 
-  /* Nút bấm ở nền sáng */
-  .social-icon-btn {
+  .academic-container .section-heading {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+    padding-bottom: 6px;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    opacity: 1 !important;
+  }
+
+  .academic-container .styled-card-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1.5px solid #000000 !important;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 12px;
+    background-color: transparent !important;
+  }
+
+  .academic-container .styled-card-table td {
+    padding: 14px 18px;
+    vertical-align: top;
+  }
+
+  .academic-container .styled-card-table td:first-child {
+    width: 28%;
+    border-right: 1.5px solid #000000 !important;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .academic-container .social-icon-btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -43,105 +101,71 @@ permalink: /
     transition: all 0.2s ease;
   }
 
-  .social-icon-btn i, .social-icon-btn span { color: #000000 !important; }
-
-  .social-icon-btn:hover {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-  }
-  .social-icon-btn:hover i, .social-icon-btn:hover span { color: #ffffff !important; }
-
-  /* Đường kẻ & Bảng ở nền sáng */
-  .section-heading {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
+  .academic-container .social-icon-btn i,
+  .academic-container .social-icon-btn span {
     color: #000000 !important;
-    border-bottom: 2px solid #000000 !important;
-    padding-bottom: 6px;
-    margin-top: 35px;
-    margin-bottom: 16px;
-  }
-
-  .styled-card-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1.5px solid #000000 !important;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-top: 12px;
-    background-color: transparent !important;
-  }
-
-  .styled-card-table td {
-    padding: 14px 18px;
-    vertical-align: top;
-  }
-
-  .styled-card-table td:first-child {
-    width: 28%;
-    border-right: 1.5px solid #000000 !important;
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .header-flex {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-  }
-
-
-  /* =========================================================
-     2. GIAO DIỆN TỐI (DARK MODE) - ÉP ĐỔI MÀU KHI BẤM NÚT
-     ========================================================= */
-  html.dark .txt-main, body.dark .txt-main, [data-theme="dark"] .txt-main,
-  html.dark h1, body.dark h1, [data-theme="dark"] h1,
-  html.dark strong, body.dark strong, [data-theme="dark"] strong {
-    color: #ffffff !important; /* Chữ chính đổi thành Trắng */
-  }
-
-  html.dark .txt-sub, body.dark .txt-sub, [data-theme="dark"] .txt-sub,
-  html.dark p, body.dark p, [data-theme="dark"] p,
-  html.dark span, body.dark span, [data-theme="dark"] span,
-  html.dark li, body.dark li, [data-theme="dark"] li,
-  html.dark td, body.dark td, [data-theme="dark"] td {
-    color: #e2e8f0 !important; /* Chữ phụ đổi thành Xám Trắng sáng */
     opacity: 1 !important;
   }
 
-  html.dark .txt-muted, body.dark .txt-muted, [data-theme="dark"] .txt-muted {
-    color: #cbd5e1 !important;
+  .academic-container .social-icon-btn:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  .academic-container .social-icon-btn:hover i,
+  .academic-container .social-icon-btn:hover span {
+    color: #ffffff !important;
   }
 
-  /* Đổi viền khung & nút sang màu Trắng khi ở nền tối */
-  html.dark .avatar-img, body.dark .avatar-img, [data-theme="dark"] .avatar-img,
-  html.dark .styled-card-table, body.dark .styled-card-table, [data-theme="dark"] .styled-card-table,
-  html.dark .styled-card-table td:first-child, body.dark .styled-card-table td:first-child, [data-theme="dark"] .styled-card-table td:first-child,
-  html.dark .section-heading, body.dark .section-heading, [data-theme="dark"] .section-heading {
+
+  /* -------------------------------------------------------------
+     2. BẮT TẤT CẢ SELECTOR DARK MODE CỦA THEME "AIR"
+     ------------------------------------------------------------- */
+  html[data-theme="dark"] .academic-container .txt-main,
+  html.dark .academic-container .txt-main,
+  body.dark .academic-container .txt-main,
+  [data-theme="dark"] .academic-container .txt-main,
+  html[data-theme="dark"] .academic-container h1,
+  html[data-theme="dark"] .academic-container strong {
+    color: #ffffff !important;
+  }
+
+  html[data-theme="dark"] .academic-container .txt-sub,
+  html.dark .academic-container .txt-sub,
+  body.dark .academic-container .txt-sub,
+  [data-theme="dark"] .academic-container .txt-sub,
+  html[data-theme="dark"] .academic-container p,
+  html[data-theme="dark"] .academic-container li,
+  html[data-theme="dark"] .academic-container td {
+    color: #f3f4f6 !important; /* Trắng sáng rõ ràng */
+  }
+
+  html[data-theme="dark"] .academic-container .txt-muted {
+    color: #d1d5db !important;
+  }
+
+  html[data-theme="dark"] .academic-container .avatar-img,
+  html[data-theme="dark"] .academic-container .section-heading,
+  html[data-theme="dark"] .academic-container .styled-card-table,
+  html[data-theme="dark"] .academic-container .styled-card-table td:first-child {
     border-color: #ffffff !important;
     color: #ffffff !important;
   }
 
-  html.dark .social-icon-btn, body.dark .social-icon-btn, [data-theme="dark"] .social-icon-btn {
+  html[data-theme="dark"] .academic-container .social-icon-btn {
     border-color: #ffffff !important;
     background-color: transparent !important;
   }
 
-  html.dark .social-icon-btn i, body.dark .social-icon-btn i, [data-theme="dark"] .social-icon-btn i,
-  html.dark .social-icon-btn span, body.dark .social-icon-btn span, [data-theme="dark"] .social-icon-btn span {
+  html[data-theme="dark"] .academic-container .social-icon-btn i,
+  html[data-theme="dark"] .academic-container .social-icon-btn span {
     color: #ffffff !important;
   }
 
-  html.dark .social-icon-btn:hover, body.dark .social-icon-btn:hover, [data-theme="dark"] .social-icon-btn:hover {
+  html[data-theme="dark"] .academic-container .social-icon-btn:hover {
     background-color: #ffffff !important;
   }
-  html.dark .social-icon-btn:hover i, body.dark .social-icon-btn:hover i, [data-theme="dark"] .social-icon-btn:hover i,
-  html.dark .social-icon-btn:hover span, body.dark .social-icon-btn:hover span, [data-theme="dark"] .social-icon-btn:hover span {
+  html[data-theme="dark"] .academic-container .social-icon-btn:hover i,
+  html[data-theme="dark"] .academic-container .social-icon-btn:hover span {
     color: #000000 !important;
   }
 </style>
@@ -161,7 +185,7 @@ permalink: /
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
-      <!-- HÀNG NÚT ICON -->
+      <!-- BUTTONS -->
       <div style="display: flex; gap: 8px; align-items: center;">
         <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
@@ -177,7 +201,7 @@ permalink: /
     I am an undergraduate student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
   </p>
 
-  <!-- MỤC ABOUT -->
+  <!-- ABOUT -->
   <div class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
@@ -189,7 +213,7 @@ permalink: /
     </tr>
   </table>
 
-  <!-- MỤC PROJECTS & ACTIVITIES -->
+  <!-- PROJECTS -->
   <div class="section-heading">PROJECTS & ACTIVITIES</div>
   <ul style="padding-left: 18px; margin: 0; line-height: 1.7;">
     <li style="margin-bottom: 12px;">
