@@ -20,12 +20,12 @@ permalink: /
   }
 
   /* -------------------------------------------------------------
-     1. MẶC ĐỊNH CHO LIGHT MODE
+     1. MẶC ĐỊNH CHO LIGHT MODE (VIỀN MẢNH TINH TẾ)
      ------------------------------------------------------------- */
   .academic-container .txt-main,
   .academic-container h1,
   .academic-container strong {
-    color: #000000 !important;
+    color: #111827 !important;
     opacity: 1 !important;
   }
 
@@ -33,50 +33,52 @@ permalink: /
   .academic-container p,
   .academic-container li,
   .academic-container td {
-    color: #1a1a1a !important;
+    color: #374151 !important;
     opacity: 1 !important;
   }
 
   .academic-container .txt-muted {
-    color: #4a4a4a !important;
+    color: #6b7280 !important;
     opacity: 1 !important;
   }
 
+  /* Viền ảnh mảnh dẻ */
   .academic-container .avatar-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid #000000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
   }
 
+  /* Đường kẻ gạch ngang tiêu đề mảnh 1px */
   .academic-container .section-heading {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    color: #000000 !important;
-    border-bottom: 1px solid #000000 !important;
+    color: #111827 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
     padding-bottom: 8px;
     margin-top: 35px;
     margin-bottom: 18px;
     opacity: 1 !important;
   }
 
-  /* BẢNG ABOUT: BO CÔNG 10PX THANH THOÁT, BỎ ĐƯỜNG KẺ CỘT */
+  /* KHUNG BẢNG: VIỀN XÁM MẢNH 1PX TINH TẾ, BỎ HOÀN TOÀN KẺ CỘT */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1px solid #000000 !important;
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: 8px;
     overflow: hidden;
     margin-top: 12px;
     background-color: transparent !important;
   }
 
   .academic-container .styled-card-table td {
-    padding: 16px 20px;
+    padding: 14px 18px;
     vertical-align: top;
   }
 
@@ -84,35 +86,35 @@ permalink: /
     width: 26%;
     font-size: 14px;
     font-weight: 600;
-    /* Đã loại bỏ border-right giúp bảng thanh thoát hơn */
+    border-right: none !important; /* Xóa bỏ tuyệt đối đường vạch giữa */
   }
 
-  /* BUTTON: BO NHẸ GÓC 8PX DẠNG HÌNH CHỮ NHẬT HIỆN ĐẠI */
+  /* BUTTON BO TRÒN NHẸ DẠNG SQUARE-SMOTH (NHƯ GITHUB/NOTION) */
   .academic-container .social-icon-btn {
-    height: 36px;
-    padding: 0 12px;
-    border-radius: 8px; /* Bo cong tinh tế */
-    border: 1px solid #000000 !important;
+    height: 34px;
+    padding: 0 10px;
+    border-radius: 6px; /* Bo nhẹ cực đẹp */
+    border: 1px solid rgba(0, 0, 0, 0.18) !important;
     background-color: #ffffff !important;
-    color: #000000 !important;
+    color: #111827 !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none !important;
-    font-size: 14px;
+    font-size: 13px;
     transition: all 0.2s ease;
   }
 
   .academic-container .social-icon-btn i,
   .academic-container .social-icon-btn span {
-    color: #000000 !important;
+    color: #111827 !important;
     opacity: 1 !important;
   }
 
   .academic-container .social-icon-btn:hover {
-    background-color: #000000 !important;
+    background-color: #111827 !important;
+    border-color: #111827 !important;
     color: #ffffff !important;
-    transform: translateY(-1px);
   }
   
   .academic-container .social-icon-btn:hover i,
@@ -122,7 +124,7 @@ permalink: /
 
 
   /* -------------------------------------------------------------
-     2. GIAO DIỆN TỐI (DARK MODE)
+     2. GIAO DIỆN TỐI (DARK MODE - VIỀN MẢNH TRẮNG MỜ)
      ------------------------------------------------------------- */
   html[data-theme="dark"] .academic-container .txt-main,
   html.dark .academic-container .txt-main,
@@ -144,19 +146,19 @@ permalink: /
   }
 
   html[data-theme="dark"] .academic-container .txt-muted {
-    color: #d1d5db !important;
+    color: #9ca3af !important;
   }
 
   html[data-theme="dark"] .academic-container .avatar-img,
   html[data-theme="dark"] .academic-container .section-heading,
   html[data-theme="dark"] .academic-container .styled-card-table {
-    border-color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
     color: #ffffff !important;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn {
-    border-color: #ffffff !important;
-    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn i,
@@ -166,11 +168,12 @@ permalink: /
 
   html[data-theme="dark"] .academic-container .social-icon-btn:hover {
     background-color: #ffffff !important;
+    border-color: #ffffff !important;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn:hover i,
   html[data-theme="dark"] .academic-container .social-icon-btn:hover span {
-    color: #000000 !important;
+    color: #111827 !important;
   }
 </style>
 
@@ -189,12 +192,12 @@ permalink: /
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
-      <!-- HÀNG NÚT ICON BO NHẸ TINH TẾ -->
+      <!-- DÀN NÚT ICON TINH TẾ -->
       <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
         <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         <a href="https://github.com/lamkr86" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.researchgate.net" target="_blank" class="social-icon-btn" style="font-size: 12px; font-weight: 700;" title="ResearchGate"><span>RG</span></a>
+        <a href="https://www.researchgate.net" target="_blank" class="social-icon-btn" style="font-size: 11px; font-weight: 700;" title="ResearchGate"><span>RG</span></a>
         <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
