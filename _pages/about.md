@@ -212,7 +212,7 @@ permalink: /
     
     <div>
       <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
-        Pham Quang Lam <span class="txt-muted" style="font-size: 15px; font-weight: 400;">(범광람)</span>
+        Pham Quang Lam <span class="txt-muted" style="font-size: 15px; font-weight: 400;">(팜광람)</span>
       </h1>
       <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 14.5px; line-height: 1.5; letter-spacing: -0.1px;">
         Undergraduate Student · Division of Computer Engineering<br>
