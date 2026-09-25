@@ -6,39 +6,7 @@ permalink: /
 
 <style>
   /* =========================================================
-     1. ÉP BỘ MÀU TƯƠNG PHẢN TUYỆT ĐỐI CHO CẢ LIGHT VÀ DARK MODE
-     ========================================================= */
-  
-  /* Cấu hình mặc định (Giao diện sáng - Light Mode) */
-  :root {
-    --main-text: #000000 !important;
-    --sub-text: #374151 !important;
-    --muted-text: #4b5563 !important;
-    --border-line: #000000 !important;
-    --btn-bg: #ffffff !important;
-    --btn-text: #000000 !important;
-  }
-
-  /* Tự động chuyển đổi khi bật GIAO DIỆN TỐI (Dark Mode) */
-  @media (prefers-color-scheme: dark), [data-theme="dark"], body.dark, .dark, html.dark {
-    :root {
-      --main-text: #ffffff !important;      /* Chữ chính: Trắng tinh */
-      --sub-text: #e2e8f0 !important;       /* Chữ phụ: Xám trắng sáng rõ */
-      --muted-text: #cbd5e1 !important;     /* Ngày tháng: Sáng nổi bật */
-      --border-line: #ffffff !important;    /* Viền khung & Đường kẻ: Trắng */
-      --btn-bg: transparent !important;      /* Nền nút: Trong suốt */
-      --btn-text: #ffffff !important;      /* Icon nút: Trắng */
-    }
-
-    /* Ép tất cả thẻ văn bản của Theme Jekyll phải nhận màu sáng */
-    .initial-content, .page, .page__content, article, p, span, li, td, h1, h2, h3 {
-      color: var(--main-text);
-      opacity: 1 !important; /* Xóa bỏ hiệu ứng làm mờ chữ của theme */
-    }
-  }
-
-  /* =========================================================
-     2. ĐỊNH DẠNG BỐ CỤC VÀ TẮT TÀNG HÌNH CHỮ
+     1. GIAO DIỆN SÁNG (LIGHT MODE) - MẶC ĐỊNH
      ========================================================= */
   .academic-container {
     max-width: 760px;
@@ -46,65 +14,61 @@ permalink: /
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
 
-  .header-flex {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-  }
+  /* Định nghĩa màu Nền Sáng - Chữ Đen */
+  .txt-main { color: #000000 !important; }
+  .txt-sub  { color: #374151 !important; } /* Xám đậm rõ nét */
+  .txt-muted{ color: #4b5563 !important; }
 
   .avatar-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--border-line) !important;
+    border: 2px solid #000000 !important;
   }
 
-  /* NÚT BẤM SOCIAL TƯƠNG PHẢN CHUẨN */
+  /* Nút bấm ở nền sáng */
   .social-icon-btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1.5px solid var(--border-line) !important;
-    background-color: var(--btn-bg) !important;
-    color: var(--btn-text) !important;
+    border: 1.5px solid #000000 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none !important;
     font-size: 14px;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
   }
 
-  .social-icon-btn i, .social-icon-btn span {
-    color: var(--btn-text) !important;
-  }
+  .social-icon-btn i, .social-icon-btn span { color: #000000 !important; }
 
   .social-icon-btn:hover {
-    filter: invert(1); /* Đảo ngược màu tinh tế khi di chuột */
+    background-color: #000000 !important;
+    color: #ffffff !important;
   }
+  .social-icon-btn:hover i, .social-icon-btn:hover span { color: #ffffff !important; }
 
-  /* TIÊU ĐỀ MỤC & ĐƯỜNG KẺ PHÂN CÁCH */
+  /* Đường kẻ & Bảng ở nền sáng */
   .section-heading {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    color: var(--main-text) !important;
-    border-bottom: 2px solid var(--border-line) !important;
+    color: #000000 !important;
+    border-bottom: 2px solid #000000 !important;
     padding-bottom: 6px;
     margin-top: 35px;
     margin-bottom: 16px;
   }
 
-  /* KHUNG BẢNG BO CONG VỚI KHOẢNG ĐỆM RỘNG */
   .styled-card-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1.5px solid var(--border-line) !important;
+    border: 1.5px solid #000000 !important;
     border-radius: 8px;
     overflow: hidden;
     margin-top: 12px;
@@ -118,15 +82,68 @@ permalink: /
 
   .styled-card-table td:first-child {
     width: 28%;
-    border-right: 1.5px solid var(--border-line) !important;
+    border-right: 1.5px solid #000000 !important;
     font-size: 14px;
     font-weight: 600;
   }
 
-  /* LỚP MÀU CHỮ ÉP ƯU TIÊN */
-  .txt-main { color: var(--main-text) !important; }
-  .txt-sub  { color: var(--sub-text) !important; }
-  .txt-muted{ color: var(--muted-text) !important; }
+  .header-flex {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+
+  /* =========================================================
+     2. GIAO DIỆN TỐI (DARK MODE) - ÉP ĐỔI MÀU KHI BẤM NÚT
+     ========================================================= */
+  html.dark .txt-main, body.dark .txt-main, [data-theme="dark"] .txt-main,
+  html.dark h1, body.dark h1, [data-theme="dark"] h1,
+  html.dark strong, body.dark strong, [data-theme="dark"] strong {
+    color: #ffffff !important; /* Chữ chính đổi thành Trắng */
+  }
+
+  html.dark .txt-sub, body.dark .txt-sub, [data-theme="dark"] .txt-sub,
+  html.dark p, body.dark p, [data-theme="dark"] p,
+  html.dark span, body.dark span, [data-theme="dark"] span,
+  html.dark li, body.dark li, [data-theme="dark"] li,
+  html.dark td, body.dark td, [data-theme="dark"] td {
+    color: #e2e8f0 !important; /* Chữ phụ đổi thành Xám Trắng sáng */
+    opacity: 1 !important;
+  }
+
+  html.dark .txt-muted, body.dark .txt-muted, [data-theme="dark"] .txt-muted {
+    color: #cbd5e1 !important;
+  }
+
+  /* Đổi viền khung & nút sang màu Trắng khi ở nền tối */
+  html.dark .avatar-img, body.dark .avatar-img, [data-theme="dark"] .avatar-img,
+  html.dark .styled-card-table, body.dark .styled-card-table, [data-theme="dark"] .styled-card-table,
+  html.dark .styled-card-table td:first-child, body.dark .styled-card-table td:first-child, [data-theme="dark"] .styled-card-table td:first-child,
+  html.dark .section-heading, body.dark .section-heading, [data-theme="dark"] .section-heading {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  html.dark .social-icon-btn, body.dark .social-icon-btn, [data-theme="dark"] .social-icon-btn {
+    border-color: #ffffff !important;
+    background-color: transparent !important;
+  }
+
+  html.dark .social-icon-btn i, body.dark .social-icon-btn i, [data-theme="dark"] .social-icon-btn i,
+  html.dark .social-icon-btn span, body.dark .social-icon-btn span, [data-theme="dark"] .social-icon-btn span {
+    color: #ffffff !important;
+  }
+
+  html.dark .social-icon-btn:hover, body.dark .social-icon-btn:hover, [data-theme="dark"] .social-icon-btn:hover {
+    background-color: #ffffff !important;
+  }
+  html.dark .social-icon-btn:hover i, body.dark .social-icon-btn:hover i, [data-theme="dark"] .social-icon-btn:hover i,
+  html.dark .social-icon-btn:hover span, body.dark .social-icon-btn:hover span, [data-theme="dark"] .social-icon-btn:hover span {
+    color: #000000 !important;
+  }
 </style>
 
 <div class="academic-container">
