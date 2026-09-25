@@ -20,7 +20,7 @@ permalink: /
   }
 
   /* -------------------------------------------------------------
-     1. MẶC ĐỊNH CHO LIGHT MODE (THEME AIR NỀN SÁNG)
+     1. MẶC ĐỊNH CHO LIGHT MODE
      ------------------------------------------------------------- */
   .academic-container .txt-main,
   .academic-container h1,
@@ -33,7 +33,7 @@ permalink: /
   .academic-container p,
   .academic-container li,
   .academic-container td {
-    color: #1a1a1a !important; /* Đen đậm nét, cực kỳ dễ đọc */
+    color: #1a1a1a !important;
     opacity: 1 !important;
   }
 
@@ -47,7 +47,7 @@ permalink: /
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #000000 !important;
+    border: 1px solid #000000 !important;
   }
 
   .academic-container .section-heading {
@@ -56,41 +56,43 @@ permalink: /
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #000000 !important;
-    border-bottom: 2px solid #000000 !important;
-    padding-bottom: 6px;
+    border-bottom: 1px solid #000000 !important;
+    padding-bottom: 8px;
     margin-top: 35px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     opacity: 1 !important;
   }
 
+  /* BẢNG ABOUT: BO CÔNG 10PX THANH THOÁT, BỎ ĐƯỜNG KẺ CỘT */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1.5px solid #000000 !important;
-    border-radius: 8px;
+    border: 1px solid #000000 !important;
+    border-radius: 10px;
     overflow: hidden;
     margin-top: 12px;
     background-color: transparent !important;
   }
 
   .academic-container .styled-card-table td {
-    padding: 14px 18px;
+    padding: 16px 20px;
     vertical-align: top;
   }
 
   .academic-container .styled-card-table td:first-child {
-    width: 28%;
-    border-right: 1.5px solid #000000 !important;
+    width: 26%;
     font-size: 14px;
     font-weight: 600;
+    /* Đã loại bỏ border-right giúp bảng thanh thoát hơn */
   }
 
+  /* BUTTON: BO NHẸ GÓC 8PX DẠNG HÌNH CHỮ NHẬT HIỆN ĐẠI */
   .academic-container .social-icon-btn {
-    width: 36px;
     height: 36px;
-    border-radius: 50%;
-    border: 1.5px solid #000000 !important;
+    padding: 0 12px;
+    border-radius: 8px; /* Bo cong tinh tế */
+    border: 1px solid #000000 !important;
     background-color: #ffffff !important;
     color: #000000 !important;
     display: inline-flex;
@@ -110,7 +112,9 @@ permalink: /
   .academic-container .social-icon-btn:hover {
     background-color: #000000 !important;
     color: #ffffff !important;
+    transform: translateY(-1px);
   }
+  
   .academic-container .social-icon-btn:hover i,
   .academic-container .social-icon-btn:hover span {
     color: #ffffff !important;
@@ -118,7 +122,7 @@ permalink: /
 
 
   /* -------------------------------------------------------------
-     2. BẮT TẤT CẢ SELECTOR DARK MODE CỦA THEME "AIR"
+     2. GIAO DIỆN TỐI (DARK MODE)
      ------------------------------------------------------------- */
   html[data-theme="dark"] .academic-container .txt-main,
   html.dark .academic-container .txt-main,
@@ -136,7 +140,7 @@ permalink: /
   html[data-theme="dark"] .academic-container p,
   html[data-theme="dark"] .academic-container li,
   html[data-theme="dark"] .academic-container td {
-    color: #f3f4f6 !important; /* Trắng sáng rõ ràng */
+    color: #f3f4f6 !important;
   }
 
   html[data-theme="dark"] .academic-container .txt-muted {
@@ -145,8 +149,7 @@ permalink: /
 
   html[data-theme="dark"] .academic-container .avatar-img,
   html[data-theme="dark"] .academic-container .section-heading,
-  html[data-theme="dark"] .academic-container .styled-card-table,
-  html[data-theme="dark"] .academic-container .styled-card-table td:first-child {
+  html[data-theme="dark"] .academic-container .styled-card-table {
     border-color: #ffffff !important;
     color: #ffffff !important;
   }
@@ -164,6 +167,7 @@ permalink: /
   html[data-theme="dark"] .academic-container .social-icon-btn:hover {
     background-color: #ffffff !important;
   }
+
   html[data-theme="dark"] .academic-container .social-icon-btn:hover i,
   html[data-theme="dark"] .academic-container .social-icon-btn:hover span {
     color: #000000 !important;
@@ -185,12 +189,12 @@ permalink: /
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
-      <!-- BUTTONS -->
-      <div style="display: flex; gap: 8px; align-items: center;">
+      <!-- HÀNG NÚT ICON BO NHẸ TINH TẾ -->
+      <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
         <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         <a href="https://github.com/lamkr86" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.researchgate.net" target="_blank" class="social-icon-btn" style="font-size: 11px; font-weight: bold;" title="ResearchGate"><span>RG</span></a>
+        <a href="https://www.researchgate.net" target="_blank" class="social-icon-btn" style="font-size: 12px; font-weight: 700;" title="ResearchGate"><span>RG</span></a>
         <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
@@ -201,7 +205,7 @@ permalink: /
     I am an undergraduate student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
   </p>
 
-  <!-- ABOUT -->
+  <!-- MỤC ABOUT -->
   <div class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
@@ -213,7 +217,7 @@ permalink: /
     </tr>
   </table>
 
-  <!-- PROJECTS -->
+  <!-- MỤC PROJECTS -->
   <div class="section-heading">PROJECTS & ACTIVITIES</div>
   <ul style="padding-left: 18px; margin: 0; line-height: 1.7;">
     <li style="margin-bottom: 12px;">
