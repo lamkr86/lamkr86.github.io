@@ -13,9 +13,9 @@ title            : "Lam-Profile"
 title_separator  : "-"
 name             : &name "Pham Quang Lam"
 description      : &description "Pham Quang Lam's academic portfolio"
-url              : "https://phamquanglam.github.io"
-baseurl          : ""
-repository       : "phamquanglam/phamquanglam.github.io"
+url              : "https://lamkr86.github.io"
+baseurl          : "/prism-lab.github.io"
+repository       : "lamkr86.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
