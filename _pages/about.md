@@ -10,7 +10,7 @@ permalink: /
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
-  /* Kích hoạt tự động cuộn mượt khi bấm vào nút điều hướng */
+  /* Cuộn mượt */
   html {
     scroll-behavior: smooth;
   }
@@ -36,16 +36,15 @@ permalink: /
     flex-wrap: wrap;
   }
 
-  /* -------------------------------------------------------------
-     THANH MENU NỘI BỘ (ĐẶT PHÍA DƯỚI HEADER)
-     ------------------------------------------------------------- */
+  /* THANH MENU NỘI BỘ (NẰM PHÍA DƯỚI ẢNH CÁ NHÂN) */
   .sub-nav {
     display: flex;
-    gap: 28px;
+    gap: 24px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     padding-bottom: 12px;
     margin-top: 10px;
     margin-bottom: 25px;
+    flex-wrap: wrap;
   }
 
   .sub-nav a {
@@ -60,9 +59,7 @@ permalink: /
     color: #0f172a !important;
   }
 
-  /* -------------------------------------------------------------
-     CÁC THÀNH PHẦN KHÁC
-     ------------------------------------------------------------- */
+  /* CHUNG */
   .academic-container .txt-main,
   .academic-container h1,
   .academic-container strong {
@@ -91,7 +88,7 @@ permalink: /
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
-  /* Section Header thanh thoát + Khoảng bù khi cuộn đến */
+  /* Section Header + Offset cuộn */
   .academic-container .section-heading {
     font-size: 11px;
     font-weight: 700;
@@ -105,7 +102,7 @@ permalink: /
     scroll-margin-top: 20px;
   }
 
-  /* Bảng About */
+  /* Bảng Thẻ Thẻ Thẻ */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
@@ -114,6 +111,7 @@ permalink: /
     border-radius: 12px;
     overflow: hidden;
     margin-top: 12px;
+    margin-bottom: 16px;
     background-color: rgba(255, 255, 255, 0.5) !important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
   }
@@ -129,7 +127,7 @@ permalink: /
     font-weight: 600;
   }
 
-  /* Nút mạng xã hội Pill Button */
+  /* Button Mạng Xã Hội */
   .academic-container .social-icon-btn {
     height: 34px;
     padding: 0 14px;
@@ -239,7 +237,7 @@ permalink: /
       </p>
 
       <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-        <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
+        <a href="mailto:lamkr86@gmail.com" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         <a href="https://github.com/lamkr86" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.researchgate.net" target="_blank" class="social-icon-btn" style="font-size: 11px; font-weight: 700;" title="ResearchGate"><span>RG</span></a>
@@ -248,46 +246,105 @@ permalink: /
     </div>
   </div>
 
-  <!-- THANH ĐIỀU HƯỚNG NẰM PHÍA DƯỚI ẢNH & THÔNG TIN CÁ NHÂN -->
+  <!-- THANH ĐIỀU HƯỚNG NẰM PHÍA DƯỚI ẢNH -->
   <div class="sub-nav">
     <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#honors">Honors</a>
-    <a href="#prism-lab">PRISM Lab</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience & Projects</a>
+    <a href="#skills">Skills & Certifications</a>
+    <a href="#activities">Activities</a>
   </div>
-
-  <!-- GIỚI THIỆU CHUNG -->
-  <p class="txt-sub" style="font-size: 14.5px; line-height: 1.7; margin-bottom: 25px; letter-spacing: -0.1px;">
-    I am a Master's student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current research focuses on software engineering, web technologies, and artificial intelligence.
-  </p>
 
   <!-- 1. MỤC ABOUT -->
   <div id="about" class="section-heading">ABOUT</div>
+  <p class="txt-sub" style="font-size: 14.5px; line-height: 1.7; margin-bottom: 20px; letter-spacing: -0.1px;">
+    I am a Master's student in Computer Engineering at <strong class="txt-main">Hansung University</strong>. My background encompasses database management, data visualization, web development, and medical data optimization. I am passionate about applying data-driven approaches and modern web technologies to solve real-world engineering problems.
+  </p>
+
+  <!-- 2. MỤC EDUCATION -->
+  <div id="education" class="section-heading">EDUCATION</div>
   <table class="styled-card-table">
     <tr>
-      <td class="txt-sub" style="letter-spacing: -0.1px;">2026 – Present</td>
+      <td class="txt-sub">2026 – Present</td>
       <td>
-        <strong class="txt-main" style="font-size: 14.5px; letter-spacing: -0.2px;">Hansung University</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px; letter-spacing: -0.1px;">Master's Student, Division of Computer Engineering</span>
+        <strong class="txt-main">Hansung University Graduate School</strong><br>
+        <span class="txt-sub" style="font-size: 13.5px;">Master's Degree in Computer Engineering (한성대학교 대학원 컴퓨터공학과 재학)</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="txt-sub">2023 – 2025</td>
+      <td>
+        <strong class="txt-main">Kwangwoon University</strong><br>
+        <span class="txt-sub" style="font-size: 13.5px;">B.S. in Computer Information Engineering (광운대학교 컴퓨터정보공학과 졸업)</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="txt-sub">2019 – 2021</td>
+      <td>
+        <strong class="txt-main">Sahmyook Health University</strong><br>
+        <span class="txt-sub" style="font-size: 13.5px;">Medical Information Department (삼육보건대학교 의료정보과 졸업)</span>
       </td>
     </tr>
   </table>
 
-  <!-- 2. MỤC PUBLICATIONS -->
-  <div id="publications" class="section-heading">PUBLICATIONS</div>
-  <p class="txt-sub" style="font-size: 13.5px;">Publications list will be updated soon.</p>
+  <!-- 3. MỤC EXPERIENCE & PROJECTS -->
+  <div id="experience" class="section-heading">EXPERIENCE & PROJECTS</div>
+  
+  <p class="txt-main" style="font-weight: 600; font-size: 14.5px; margin-bottom: 8px;">Research & Project Experience</p>
+  <ul style="padding-left: 18px; margin-bottom: 20px; line-height: 1.6;" class="txt-sub">
+    <li style="margin-bottom: 8px;">
+      <strong class="txt-main">Database & Data Visualization Project:</strong>
+      Large-scale data analysis & visualization system development; research on database optimization and search speed enhancement.
+    </li>
+    <li>
+      <strong class="txt-main">Web System Development Project:</strong>
+      E-commerce website development for shoe sales, data processing optimization, and UX improvement driven by data analytics.
+    </li>
+  </ul>
 
-  <!-- 3. MỤC TEACHING -->
-  <div id="teaching" class="section-heading">TEACHING</div>
-  <p class="txt-sub" style="font-size: 13.5px;">Teaching activities will be updated soon.</p>
+  <p class="txt-main" style="font-weight: 600; font-size: 14.5px; margin-bottom: 8px;">Practical Experience</p>
+  <ul style="padding-left: 18px; margin-bottom: 20px; line-height: 1.6;" class="txt-sub">
+    <li style="margin-bottom: 6px;">
+      <strong class="txt-main">Language Center Office, Sahmyook Health University:</strong> Vietnamese student info management & data systemization.
+    </li>
+    <li style="margin-bottom: 6px;">
+      <strong class="txt-main">Sahmyook Medical Center:</strong> Hands-on experience in customer info management, medical data security, and optimization processes.
+    </li>
+    <li>
+      <strong class="txt-main">Silver Senior Nursing Home:</strong> Patient data entry and information system maintenance.
+    </li>
+  </ul>
 
-  <!-- 4. MỤC HONORS -->
-  <div id="honors" class="section-heading">HONORS</div>
-  <p class="txt-sub" style="font-size: 13.5px;">Honors and awards will be updated soon.</p>
+  <!-- 4. MỤC SKILLS & CERTIFICATIONS -->
+  <div id="skills" class="section-heading">SKILLS & CERTIFICATIONS</div>
+  <table class="styled-card-table">
+    <tr>
+      <td class="txt-sub">Programming</td>
+      <td><span class="txt-main">C, C++, JavaScript, PHP</span></td>
+    </tr>
+    <tr>
+      <td class="txt-sub">Database & Network</td>
+      <td><span class="txt-main">SQL, Database Optimization, Network Traffic Analysis</span></td>
+    </tr>
+    <tr>
+      <td class="txt-sub">Certifications</td>
+      <td>
+        <span class="txt-main">• ITQ Information Technology Qualification (Grade A)</span><br>
+        <span class="txt-main">• TOPIK Level 5 (한국어능력시험 5급)</span><br>
+        <span class="txt-main">• Social Integration Program Level 5 (사회통합프로그램 5단계)</span>
+      </td>
+    </tr>
+  </table>
 
-  <!-- 5. MỤC PRISM LAB -->
-  <div id="prism-lab" class="section-heading">PRISM LAB</div>
-  <p class="txt-sub" style="font-size: 13.5px;">PRISM Lab research details will be updated soon.</p>
+  <!-- 5. MỤC ACTIVITIES -->
+  <div id="activities" class="section-heading">ACTIVITIES</div>
+  <ul style="padding-left: 18px; margin: 0; line-height: 1.6;" class="txt-sub">
+    <li style="margin-bottom: 8px;">
+      <strong class="txt-main">Sahmyook Medical Center Daycare Center Volunteer:</strong> Medical system data management and social contribution.
+    </li>
+    <li>
+      <strong class="txt-main">Bapfor Sharing Movement Volunteer:</strong> Data-driven operation management and community service participation.
+    </li>
+  </ul>
 
 </div>
