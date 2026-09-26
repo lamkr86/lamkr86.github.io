@@ -266,7 +266,7 @@ permalink: /
   <div id="about" class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
-      <td class="txt-sub" style="letter-spacing: -0.1px;">2024 – Present</td>
+      <td class="txt-sub" style="letter-spacing: -0.1px;">2026 – Present</td>
       <td>
         <strong class="txt-main" style="font-size: 14.5px; letter-spacing: -0.2px;">Hansung University</strong><br>
         <span class="txt-sub" style="font-size: 13.5px; letter-spacing: -0.1px;">Master's Student, Division of Computer Engineering</span>
