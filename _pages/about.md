@@ -88,7 +88,7 @@ permalink: /
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
-  /* Section Header + Offset cuộn */
+  /* SECTION HEADING & KHOẢNG BÙ NỐI DÒNG TIÊU ĐỀ KHI CUỘN */
   .academic-container .section-heading {
     font-size: 11px;
     font-weight: 700;
@@ -99,7 +99,7 @@ permalink: /
     padding-bottom: 8px;
     margin-top: 40px;
     margin-bottom: 18px;
-    scroll-margin-top: 20px;
+    scroll-margin-top: 70px;
   }
 
   /* Bảng Thẻ */
@@ -229,7 +229,7 @@ permalink: /
     
     <div>
       <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
-        Pham Quang Lam <span class="txt-muted" style="font-size: 15px; font-weight: 400;">(팜광람)</span>
+        Pham Quang Lam
       </h1>
       <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 14px; line-height: 1.5; letter-spacing: -0.1px;">
         Master's Student · Division of Computer Engineering<br>
@@ -268,21 +268,21 @@ permalink: /
       <td class="txt-sub">2026 – Present</td>
       <td>
         <strong class="txt-main" style="font-size: 13.5px;">Hansung University Graduate School</strong><br>
-        <span class="txt-sub" style="font-size: 13px;">Master's Degree in Computer Engineering </span>
+        <span class="txt-sub" style="font-size: 13px;">Master's Student, Division of Computer Engineering</span>
       </td>
     </tr>
     <tr>
       <td class="txt-sub">2023 – 2025</td>
       <td>
         <strong class="txt-main" style="font-size: 13.5px;">Kwangwoon University</strong><br>
-        <span class="txt-sub" style="font-size: 13px;">B.S. in Computer Information Engineering </span>
+        <span class="txt-sub" style="font-size: 13px;">B.S. in Computer Information Engineering</span>
       </td>
     </tr>
     <tr>
       <td class="txt-sub">2019 – 2021</td>
       <td>
         <strong class="txt-main" style="font-size: 13.5px;">Sahmyook Health University</strong><br>
-        <span class="txt-sub" style="font-size: 13px;">Medical Information Department </span>
+        <span class="txt-sub" style="font-size: 13px;">Associate Degree in Medical Information</span>
       </td>
     </tr>
   </table>
@@ -330,13 +330,13 @@ permalink: /
       <td class="txt-sub">Certifications</td>
       <td>
         <span class="txt-main" style="font-size: 13.5px;">• ITQ Information Technology Qualification (Grade A)</span><br>
-        <span class="txt-main" style="font-size: 13.5px;">• TOPIK Level 5 </span><br>
-        <span class="txt-main" style="font-size: 13.5px;">• Social Integration Program Level 5 </span>
+        <span class="txt-main" style="font-size: 13.5px;">• TOPIK (Test of Proficiency in Korean) Level 5</span><br>
+        <span class="txt-main" style="font-size: 13.5px;">• Social Integration Program (KIIP) Level 5</span>
       </td>
     </tr>
   </table>
 
-  <!-- 5. MỤC ACTIVITIES (ĐÃ ĐỒNG BỘ CỠ CHỮ 13.5PX VÀ KIỂU TIÊU ĐỀ) -->
+  <!-- 5. MỤC ACTIVITIES -->
   <div id="activities" class="section-heading">ACTIVITIES</div>
   <p class="txt-main" style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Volunteer Experience</p>
   <ul style="padding-left: 18px; margin: 0; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
@@ -349,3 +349,25 @@ permalink: /
   </ul>
 
 </div>
+
+<!-- SCRIPT HỖ TRỢ CUỘN CHÍNH XÁC VÀO TIÊU ĐỀ NẾU TRANG WEB CÓ THANH HEADER ĐỘNG -->
+<script>
+  document.querySelectorAll('.sub-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        const offset = 65; // Khoảng đệm phía trên
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
