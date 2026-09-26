@@ -43,7 +43,7 @@ permalink: /
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     padding-bottom: 12px;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
   }
 
@@ -249,20 +249,18 @@ permalink: /
   <!-- THANH ĐIỀU HƯỚNG NẰM PHÍA DƯỚI ẢNH -->
   <div class="sub-nav">
     <a href="#about">About</a>
-    <a href="#education">Education</a>
     <a href="#experience">Experience & Projects</a>
     <a href="#skills">Skills & Certifications</a>
     <a href="#activities">Activities</a>
   </div>
 
-  <!-- 1. MỤC ABOUT -->
-  <div id="about" class="section-heading">ABOUT</div>
-  <p class="txt-sub" style="font-size: 13.5px; line-height: 1.6; margin-bottom: 20px; letter-spacing: -0.1px;">
+  <!-- PHẦN GIỚI THIỆU NGẮN (XUẤT HIỆN NGAY DƯỚI THANH MENU) -->
+  <p class="txt-sub" style="font-size: 13.5px; line-height: 1.6; margin-bottom: 25px; letter-spacing: -0.1px;">
     I am a Master's student in Computer Engineering at <strong class="txt-main">Hansung University</strong>. My background encompasses database management, data visualization, web development, and medical data optimization. I am passionate about applying data-driven approaches and modern web technologies to solve real-world engineering problems.
   </p>
 
-  <!-- 2. MỤC EDUCATION -->
-  <div id="education" class="section-heading">EDUCATION</div>
+  <!-- 1. MỤC ABOUT (Bao gồm bảng Bằng cấp/Học vấn) -->
+  <div id="about" class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
       <td class="txt-sub">2026 – Present</td>
@@ -287,7 +285,7 @@ permalink: /
     </tr>
   </table>
 
-  <!-- 3. MỤC EXPERIENCE & PROJECTS -->
+  <!-- 2. MỤC EXPERIENCE & PROJECTS -->
   <div id="experience" class="section-heading">EXPERIENCE & PROJECTS</div>
   
   <p class="txt-main" style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Research & Project Experience</p>
@@ -315,7 +313,7 @@ permalink: /
     </li>
   </ul>
 
-  <!-- 4. MỤC SKILLS & CERTIFICATIONS -->
+  <!-- 3. MỤC SKILLS & CERTIFICATIONS -->
   <div id="skills" class="section-heading">SKILLS & CERTIFICATIONS</div>
   <table class="styled-card-table">
     <tr>
@@ -336,7 +334,7 @@ permalink: /
     </tr>
   </table>
 
-  <!-- 5. MỤC ACTIVITIES -->
+  <!-- 4. MỤC ACTIVITIES -->
   <div id="activities" class="section-heading">ACTIVITIES</div>
   <p class="txt-main" style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Volunteer Experience</p>
   <ul style="padding-left: 18px; margin: 0; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
