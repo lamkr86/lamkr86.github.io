@@ -368,4 +368,37 @@ permalink: /
       }
     });
   });
+
+  <style>
+  /* Thu nhỏ chiều cao footer */
+  .page__footer {
+    padding: 10px 0 !important;
+    margin-top: 20px !important;
+  }
+
+  .page__footer-follow {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .page__footer-follow ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .page__footer-follow li {
+    display: inline-block !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+  }
+
+  /* Ẩn bớt các dòng chữ bản quyền dài bên dưới */
+  .page__footer-copyright {
+    display: none !important;
+  }
+</style>
 </script>
