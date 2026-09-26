@@ -369,16 +369,19 @@ permalink: /
     });
   });
 
+  
   <style>
-  /* Thu nhỏ chiều cao footer */
+  /* Thu nhỏ tối đa chiều cao thanh Footer (còn 1/2 kích thước trước) */
   .page__footer {
-    padding: 10px 0 !important;
-    margin-top: 20px !important;
+    padding: 2px 0 !important;
+    margin-top: 10px !important;
+    min-height: unset !important;
   }
 
   .page__footer-follow {
     padding: 0 !important;
     margin: 0 !important;
+    line-height: 1 !important;
   }
 
   .page__footer-follow ul {
@@ -387,18 +390,23 @@ permalink: /
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 8px !important;
+    gap: 6px !important;
   }
 
   .page__footer-follow li {
     display: inline-block !important;
     margin: 0 !important;
-    font-size: 13px !important;
+    font-size: 11px !important; /* Chữ nhỏ gọn */
+    line-height: 1 !important;
   }
 
-  /* Ẩn bớt các dòng chữ bản quyền dài bên dưới */
+  /* Chỉnh biểu tượng icon nhỏ lại vừa vặn */
+  .page__footer-follow i {
+    font-size: 12px !important;
+  }
+
+  /* Triệt tiêu hoàn toàn khoảng trắng và nội dung dư thừa */
   .page__footer-copyright {
     display: none !important;
   }
 </style>
-</script>
