@@ -15,18 +15,6 @@ permalink: /
     scroll-behavior: smooth;
   }
 
-  /* 0. CẮT BỎ CĂN GIỮA TOÀN BỘ KHUNG JEKYLL / MINIMAL MISTAKES */
-  #main,
-  .initial-content,
-  .page,
-  .archive,
-  .page__inner-wrap {
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    padding-left: 0 !important;
-  }
-
   /* 1. ĐỊNH DẠNG MASTHEAD (ẨN MENU, NÚT THEME SÁT PHẢI, XÓA DÒNG KẺ) */
   .masthead {
     display: block !important;
@@ -68,7 +56,7 @@ permalink: /
     width: auto !important;
   }
 
-  /* 2. ĐỊNH DẠNG FOOTER (CĂN SÁT LỀ TRÁI VỚI NỘI DUNG) */
+  /* 2. ĐỊNH DẠNG FOOTER (CHỈ CĂN NÚT FOLLOW SÁT HẲN LỀ TRÁI MÀN HÌNH) */
   .page__footer,
   footer {
     background-color: transparent !important;
@@ -77,22 +65,21 @@ permalink: /
     box-shadow: none !important;
     padding: 15px 0 !important;
     margin-top: 30px !important;
-    margin-left: 0 !important;
-    margin-right: auto !important;
     width: 100% !important;
   }
 
   .page__footer-follow {
-    max-width: 760px !important;
-    margin: 0 !important; /* Đưa về hẳn bên trái */
-    padding: 0 0 0 2rem !important; /* Căn thẳng hàng với academic-container */
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important; /* Đ khoảng cách nhẹ với mép trái màn hình */
   }
 
   .page__footer-follow ul {
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
-    justify-content: flex-start !important; /* Đưa sang lề trái */
+    justify-content: flex-start !important; /* Đưa các item sang hẳn bên trái */
     align-items: center !important;
     gap: 6px !important;
   }
@@ -114,7 +101,7 @@ permalink: /
     display: none !important;
   }
 
-  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU */
+  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU (KHẮC PHỤC CHỮ MỜ) */
   html[data-theme="dark"] p,
   html[data-theme="dark"] li,
   html[data-theme="dark"] span,
@@ -146,13 +133,10 @@ permalink: /
     color: #ffffff !important;
   }
 
-  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH (CĂN HẲN SANG TRÁI) */
+  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH (CĂN GIỮA BÌNH THƯỜNG) */
   .academic-container {
     max-width: 760px;
-    margin-left: 0 !important; /* Đưa sang hẳn bên trái */
-    margin-right: auto !important;
-    padding-left: 2rem; /* Giữ khoảng cách nhẹ với mép trái màn hình */
-    padding-right: 1.5rem;
+    margin: 0 auto;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
