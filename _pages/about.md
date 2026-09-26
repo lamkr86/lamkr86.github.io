@@ -360,7 +360,7 @@ permalink: /
         <a href="https://scholar.google.com/citations?user=IJwe5lUAAAAJ&hl=vi&authuser=3" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         <a href="https://github.com/lamkr86" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.researchgate.net/profile/Pham-Lam-16?ev=prf_overview" target="_blank" class="social-icon-btn" style="font-size: 11px; font-weight: 700;" title="ResearchGate"><span>RG</span></a>
-        <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/quang-lam-pham-19654743a/" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>
