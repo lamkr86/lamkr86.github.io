@@ -215,7 +215,7 @@ permalink: /
         Pham Quang Lam <span class="txt-muted" style="font-size: 15px; font-weight: 400;">(팜광람)</span>
       </h1>
       <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 14.5px; line-height: 1.5; letter-spacing: -0.1px;">
-        Undergraduate Student · Division of Computer Engineering<br>
+        Master's Student · Division of Computer Engineering<br>
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
