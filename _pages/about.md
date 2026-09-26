@@ -437,38 +437,3 @@ permalink: /
   });
 
   
-  <style>
- /* Thu nhỏ tối đa chiều cao thanh Footer màu xanh */
-.page__footer {
-  padding: 0 !important;
-  margin-top: 10px !important;
-  min-height: unset !important;
-}
-
-.page__footer-follow {
-  padding: 2px 0 !important;
-  margin: 0 !important;
-  line-height: 1 !important;
-}
-
-.page__footer-follow ul {
-  margin: 0 !important;
-  padding: 0 !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 6px !important;
-}
-
-.page__footer-follow li {
-  display: inline-flex !important;
-  align-items: center !important;
-  margin: 0 !important;
-  font-size: 11px !important;
-  line-height: 1 !important;
-}
-
-.page__footer-follow i {
-  font-size: 11px !important;
-}
-</style>
