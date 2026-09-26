@@ -15,6 +15,18 @@ permalink: /
     scroll-behavior: smooth;
   }
 
+  /* 0. CẮT BỎ CĂN GIỮA TOÀN BỘ KHUNG JEKYLL / MINIMAL MISTAKES */
+  #main,
+  .initial-content,
+  .page,
+  .archive,
+  .page__inner-wrap {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+  }
+
   /* 1. ĐỊNH DẠNG MASTHEAD (ẨN MENU, NÚT THEME SÁT PHẢI, XÓA DÒNG KẺ) */
   .masthead {
     display: block !important;
@@ -56,7 +68,7 @@ permalink: /
     width: auto !important;
   }
 
-  /* 2. ĐỊNH DẠNG FOOTER (CĂN LỀ TRÁI, CĂN CHUẨN THẲNG KHUNG NỘI DUNG) */
+  /* 2. ĐỊNH DẠNG FOOTER (CĂN SÁT LỀ TRÁI VỚI NỘI DUNG) */
   .page__footer,
   footer {
     background-color: transparent !important;
@@ -65,12 +77,15 @@ permalink: /
     box-shadow: none !important;
     padding: 15px 0 !important;
     margin-top: 30px !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    width: 100% !important;
   }
 
   .page__footer-follow {
     max-width: 760px !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
+    margin: 0 !important; /* Đưa về hẳn bên trái */
+    padding: 0 0 0 2rem !important; /* Căn thẳng hàng với academic-container */
   }
 
   .page__footer-follow ul {
@@ -99,7 +114,7 @@ permalink: /
     display: none !important;
   }
 
-  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU (KHẮC PHỤC CHỮ MỜ) */
+  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU */
   html[data-theme="dark"] p,
   html[data-theme="dark"] li,
   html[data-theme="dark"] span,
@@ -131,10 +146,13 @@ permalink: /
     color: #ffffff !important;
   }
 
-  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH */
+  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH (CĂN HẲN SANG TRÁI) */
   .academic-container {
     max-width: 760px;
-    margin: 0 auto;
+    margin-left: 0 !important; /* Đưa sang hẳn bên trái */
+    margin-right: auto !important;
+    padding-left: 2rem; /* Giữ khoảng cách nhẹ với mép trái màn hình */
+    padding-right: 1.5rem;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
