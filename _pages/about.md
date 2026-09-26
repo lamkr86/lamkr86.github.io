@@ -268,21 +268,21 @@ permalink: /
       <td class="txt-sub">2026 – Present</td>
       <td>
         <strong class="txt-main">Hansung University Graduate School</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px;">Master's Degree in Computer Engineering (한성대학교 대학원 컴퓨터공학과 재학)</span>
+        <span class="txt-sub" style="font-size: 13.5px;">Master's Degree in Computer Engineering </span>
       </td>
     </tr>
     <tr>
       <td class="txt-sub">2023 – 2025</td>
       <td>
         <strong class="txt-main">Kwangwoon University</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px;">B.S. in Computer Information Engineering (광운대학교 컴퓨터정보공학과 졸업)</span>
+        <span class="txt-sub" style="font-size: 13.5px;">B.S. in Computer Information Engineering </span>
       </td>
     </tr>
     <tr>
       <td class="txt-sub">2019 – 2021</td>
       <td>
         <strong class="txt-main">Sahmyook Health University</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px;">Medical Information Department (삼육보건대학교 의료정보과 졸업)</span>
+        <span class="txt-sub" style="font-size: 13.5px;">Medical Information Department </span>
       </td>
     </tr>
   </table>
