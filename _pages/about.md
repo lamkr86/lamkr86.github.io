@@ -56,7 +56,7 @@ permalink: /
     width: auto !important;
   }
 
-  /* 2. ĐỊNH DẠNG FOOTER (BỎ NỀN XANH, CHỈ GIỮ FOLLOW GITHUB) */
+  /* 2. ĐỊNH DẠNG FOOTER (CĂN LỀ TRÁI, CĂN CHUẨN THẲNG KHUNG NỘI DUNG) */
   .page__footer,
   footer {
     background-color: transparent !important;
@@ -68,15 +68,16 @@ permalink: /
   }
 
   .page__footer-follow {
+    max-width: 760px !important;
+    margin: 0 auto !important;
     padding: 0 !important;
-    margin: 0 !important;
   }
 
   .page__footer-follow ul {
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-start !important; /* Đưa sang lề trái */
     align-items: center !important;
     gap: 6px !important;
   }
