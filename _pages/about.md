@@ -206,7 +206,7 @@ permalink: /
 
 <div class="academic-container">
 
-  <!-- HEADER -->
+  <-- HEADER -->
   <div class="header-flex">
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
     
@@ -232,7 +232,7 @@ permalink: /
 
   <!-- GIỚI THIỆU -->
   <p class="txt-sub" style="font-size: 14.5px; line-height: 1.7; margin-bottom: 25px; letter-spacing: -0.1px;">
-    I am an undergraduate student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
+    I am an master's student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
   </p>
 
   <!-- MỤC ABOUT -->
