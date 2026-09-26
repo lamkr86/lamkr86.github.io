@@ -4,27 +4,51 @@ author_profile: false
 permalink: /
 ---
 
-<!-- NHẬP PHÔNG CHỮ INTER VÀ PLUS JAKARTA SANS CHUẨN THẾ GIỚI -->
+<!-- NHẬP PHÔNG CHỮ INTER VÀ PLUS JAKARTA SANS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
-  /* Áp dụng phông chữ Inter chuẩn thế giới cho toàn bộ container */
+  /* Cuộn mượt khi bấm vào menu nav */
+  html {
+    scroll-behavior: smooth;
+  }
+
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Tiêu đề chính dùng Plus Jakarta Sans tạo độ hiện đại */
   .academic-container h1, 
   .academic-container .section-heading {
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
 
+  /* SUB-NAVIGATION (THANH MENU TRÊN ĐẦU TRANG) */
+  .sub-nav {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+  }
+
+  .sub-nav a {
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b !important;
+    transition: color 0.2s ease;
+  }
+
+  .sub-nav a:hover {
+    color: #0f172a !important;
+  }
+
+  /* STYLE DÙNG CHUNG */
   .header-flex {
     display: flex;
     align-items: center;
@@ -33,9 +57,6 @@ permalink: /
     flex-wrap: wrap;
   }
 
-  /* -------------------------------------------------------------
-     1. GIAO DIỆN SÁNG (LIGHT MODE)
-     ------------------------------------------------------------- */
   .academic-container .txt-main,
   .academic-container h1,
   .academic-container strong {
@@ -56,7 +77,6 @@ permalink: /
     opacity: 1 !important;
   }
 
-  /* Avatar tinh tế */
   .academic-container .avatar-img {
     width: 120px;
     height: 120px;
@@ -65,7 +85,6 @@ permalink: /
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
-  /* Section Header thanh thoát chuẩn Vercel */
   .academic-container .section-heading {
     font-size: 11px;
     font-weight: 700;
@@ -74,12 +93,11 @@ permalink: /
     color: #0f172a !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     padding-bottom: 8px;
-    margin-top: 35px;
+    margin-top: 40px;
     margin-bottom: 18px;
-    opacity: 1 !important;
+    scroll-margin-top: 20px;
   }
 
-  /* Khung Card Bo 12px + Bóng đổ Ambient cực mịn */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
@@ -103,7 +121,6 @@ permalink: /
     font-weight: 600;
   }
 
-  /* Nút bấm bo hạt đậu (Pill Shape) */
   .academic-container .social-icon-btn {
     height: 34px;
     padding: 0 14px;
@@ -124,7 +141,6 @@ permalink: /
   .academic-container .social-icon-btn i,
   .academic-container .social-icon-btn span {
     color: #0f172a !important;
-    opacity: 1 !important;
   }
 
   .academic-container .social-icon-btn:hover {
@@ -140,35 +156,31 @@ permalink: /
     color: #ffffff !important;
   }
 
+  /* DARK MODE */
+  html[data-theme="dark"] .sub-nav {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
 
-  /* -------------------------------------------------------------
-     2. GIAO DIỆN TỐI (DARK MODE)
-     ------------------------------------------------------------- */
+  html[data-theme="dark"] .sub-nav a {
+    color: #94a3b8 !important;
+  }
+
+  html[data-theme="dark"] .sub-nav a:hover {
+    color: #ffffff !important;
+  }
+
   html[data-theme="dark"] .academic-container .txt-main,
   html.dark .academic-container .txt-main,
   body.dark .academic-container .txt-main,
-  [data-theme="dark"] .academic-container .txt-main,
-  html[data-theme="dark"] .academic-container h1,
-  html[data-theme="dark"] .academic-container strong {
+  [data-theme="dark"] .academic-container .txt-main {
     color: #f8fafc !important;
   }
 
   html[data-theme="dark"] .academic-container .txt-sub,
   html.dark .academic-container .txt-sub,
   body.dark .academic-container .txt-sub,
-  [data-theme="dark"] .academic-container .txt-sub,
-  html[data-theme="dark"] .academic-container p,
-  html[data-theme="dark"] .academic-container li,
-  html[data-theme="dark"] .academic-container td {
+  [data-theme="dark"] .academic-container .txt-sub {
     color: #cbd5e1 !important;
-  }
-
-  html[data-theme="dark"] .academic-container .txt-muted {
-    color: #64748b !important;
-  }
-
-  html[data-theme="dark"] .academic-container .avatar-img {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
   }
 
   html[data-theme="dark"] .academic-container .section-heading {
@@ -179,13 +191,11 @@ permalink: /
   html[data-theme="dark"] .academic-container .styled-card-table {
     border-color: rgba(255, 255, 255, 0.1) !important;
     background-color: rgba(255, 255, 255, 0.03) !important;
-    box-shadow: none;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn {
     border-color: rgba(255, 255, 255, 0.15) !important;
     background-color: rgba(255, 255, 255, 0.05) !important;
-    box-shadow: none;
   }
 
   html[data-theme="dark"] .academic-container .social-icon-btn i,
@@ -206,6 +216,14 @@ permalink: /
 
 <div class="academic-container">
 
+  <!-- MENU CHUYỂN MỤC CUỘN MƯỢT -->
+  <div class="sub-nav">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#projects">Projects & Activities</a>
+  </div>
+
   <!-- HEADER -->
   <div class="header-flex">
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
@@ -219,7 +237,6 @@ permalink: /
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
 
-      <!-- DÀN NÚT BUTTON -->
       <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
         <a href="mailto:26611301@hansung.ac.kr" class="social-icon-btn" title="Email"><i class="far fa-envelope"></i></a>
         <a href="https://scholar.google.com" target="_blank" class="social-icon-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
@@ -232,23 +249,31 @@ permalink: /
 
   <!-- GIỚI THIỆU -->
   <p class="txt-sub" style="font-size: 14.5px; line-height: 1.7; margin-bottom: 25px; letter-spacing: -0.1px;">
-    I am an master's student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current study focuses on software engineering, web technologies, and artificial intelligence.
+    I am a Master's student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current research focuses on software engineering, web technologies, and artificial intelligence.
   </p>
 
   <!-- MỤC ABOUT -->
-  <div class="section-heading">ABOUT</div>
+  <div id="about" class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
       <td class="txt-sub" style="letter-spacing: -0.1px;">2024 – Present</td>
       <td>
         <strong class="txt-main" style="font-size: 14.5px; letter-spacing: -0.2px;">Hansung University</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px; letter-spacing: -0.1px;">Undergraduate Student, Division of Computer Engineering</span>
+        <span class="txt-sub" style="font-size: 13.5px; letter-spacing: -0.1px;">Master's Student, Division of Computer Engineering</span>
       </td>
     </tr>
   </table>
 
+  <!-- MỤC PUBLICATIONS -->
+  <div id="publications" class="section-heading">PUBLICATIONS</div>
+  <p class="txt-sub" style="font-size: 13.5px;">Publications list will be updated soon.</p>
+
+  <!-- MỤC TEACHING -->
+  <div id="teaching" class="section-heading">TEACHING</div>
+  <p class="txt-sub" style="font-size: 13.5px;">Teaching activities will be updated soon.</p>
+
   <!-- MỤC PROJECTS -->
-  <div class="section-heading">PROJECTS & ACTIVITIES</div>
+  <div id="projects" class="section-heading">PROJECTS & ACTIVITIES</div>
   <ul style="padding-left: 18px; margin: 0; line-height: 1.7;">
     <li style="margin-bottom: 12px;">
       <strong class="txt-main" style="letter-spacing: -0.2px;">Academic Personal Website</strong> <span class="txt-muted" style="font-size: 13px;">(2026)</span><br>
