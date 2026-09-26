@@ -15,51 +15,90 @@ permalink: /
     scroll-behavior: smooth;
   }
 
- /* Xóa đường kẻ dưới và bóng của thanh masthead, mở rộng full chiều rộng */
-.masthead {
-  display: block !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-  position: absolute !important;
-  top: 10px !important;
-  right: 20px !important;
-  left: auto !important;
-  width: auto !important;
-  z-index: 1000 !important;
-}
+  /* 1. ĐỊNH DẠNG MASTHEAD (ẨN MENU, NÚT THEME SÁT PHẢI, XÓA DÒNG KẺ) */
+  .masthead {
+    display: block !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 20px !important;
+    left: auto !important;
+    width: auto !important;
+    z-index: 1000 !important;
+  }
 
-/* Xóa viền/đường kẻ bên trong khung masthead */
-.masthead__inner-wrap {
-  border-bottom: none !important;
-  padding: 0 !important;
-  max-width: 100% !important;
-}
+  .masthead__inner-wrap {
+    border-bottom: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
 
-/* Ẩn tiêu đề trang Lam-Profile */
-.site-title {
-  display: none !important;
-}
+  .site-title {
+    display: none !important;
+  }
 
-/* Ẩn tất cả các menu ngoại trừ nút chuyển đổi giao diện */
-.masthead__menu-item {
-  display: none !important;
-}
+  .masthead__menu-item {
+    display: none !important;
+  }
 
-.masthead__menu-item:last-child,
-.masthead__menu-item:has(i),
-.masthead__menu-item:has(.fa-cog),
-.masthead__menu-item:has(.fa-gear) {
-  display: inline-block !important;
-  float: right !important;
-}
+  .masthead__menu-item:last-child,
+  .masthead__menu-item:has(i),
+  .masthead__menu-item:has(.fa-cog),
+  .masthead__menu-item:has(.fa-gear) {
+    display: inline-block !important;
+    float: right !important;
+  }
 
-.masthead__menu {
-  float: right !important;
-  width: auto !important;
-}
+  .masthead__menu {
+    float: right !important;
+    width: auto !important;
+  }
 
-  /* Sửa màu chữ sáng rõ hơn trong chế độ tối (Dark Mode) */
+  /* 2. ĐỊNH DẠNG FOOTER (BỎ NỀN XANH, CHỈ GIỮ FOLLOW GITHUB) */
+  .page__footer,
+  footer {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px 0 !important;
+    margin-top: 30px !important;
+  }
+
+  .page__footer-follow {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .page__footer-follow ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .page__footer-follow li,
+  .page__footer-follow a {
+    color: #64748b !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+  }
+
+  .page__footer-follow a:hover {
+    color: #0f172a !important;
+  }
+
+  .page__footer-copyright {
+    display: none !important;
+  }
+
+  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU (KHẮC PHỤC CHỮ MỜ) */
   html[data-theme="dark"] p,
   html[data-theme="dark"] li,
   html[data-theme="dark"] span,
@@ -81,7 +120,17 @@ permalink: /
     border-color: rgba(255, 255, 255, 0.1) !important;
     color: #e1e4e8 !important;
   }
-  
+
+  html[data-theme="dark"] .page__footer-follow li,
+  html[data-theme="dark"] .page__footer-follow a {
+    color: #94a3b8 !important;
+  }
+
+  html[data-theme="dark"] .page__footer-follow a:hover {
+    color: #ffffff !important;
+  }
+
+  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH */
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
@@ -126,7 +175,7 @@ permalink: /
     color: #0f172a !important;
   }
 
-  /* CHUNG */
+  /* CHUNG LIGHT MODE */
   .academic-container .txt-main,
   .academic-container h1,
   .academic-container strong {
@@ -224,13 +273,13 @@ permalink: /
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   }
-  
+
   .academic-container .social-icon-btn:hover i,
   .academic-container .social-icon-btn:hover span {
     color: #ffffff !important;
   }
 
-  /* DARK MODE */
+  /* CHỈNH THÊM CHO DARK MODE CHO CÁC THẺ CARD & SUB-NAV */
   html[data-theme="dark"] .sub-nav {
     border-bottom-color: rgba(255, 255, 255, 0.1);
   }
@@ -435,5 +484,4 @@ permalink: /
       }
     });
   });
-
-  
+</script>
