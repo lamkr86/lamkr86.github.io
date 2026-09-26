@@ -438,42 +438,37 @@ permalink: /
 
   
   <style>
-  /* Thu nhỏ tối đa chiều cao thanh Footer (còn 1/2 kích thước trước) */
-  .page__footer {
-    padding: 2px 0 !important;
-    margin-top: 10px !important;
-    min-height: unset !important;
-  }
+ /* Thu nhỏ tối đa chiều cao thanh Footer màu xanh */
+.page__footer {
+  padding: 0 !important;
+  margin-top: 10px !important;
+  min-height: unset !important;
+}
 
-  .page__footer-follow {
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 1 !important;
-  }
+.page__footer-follow {
+  padding: 2px 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
 
-  .page__footer-follow ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 6px !important;
-  }
+.page__footer-follow ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
 
-  .page__footer-follow li {
-    display: inline-block !important;
-    margin: 0 !important;
-    font-size: 11px !important; /* Chữ nhỏ gọn */
-    line-height: 1 !important;
-  }
+.page__footer-follow li {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+}
 
-  /* Chỉnh biểu tượng icon nhỏ lại vừa vặn */
-  .page__footer-follow i {
-    font-size: 12px !important;
-  }
-
-  /* Triệt tiêu hoàn toàn khoảng trắng và nội dung dư thừa */
-  .page__footer-copyright {
-    display: none !important;
-  }
+.page__footer-follow i {
+  font-size: 11px !important;
+}
 </style>
