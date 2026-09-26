@@ -14,29 +14,34 @@ permalink: /
   html {
     scroll-behavior: smooth;
   }
-    /* Ẩn tiêu đề trang Lam-Profile */
+   /* Giữ lại thanh masthead để chứa nút đổi theme */
+.masthead {
+  display: block !important;
+}
+
+/* Ẩn tiêu đề trang Lam-Profile */
 .site-title {
   display: none !important;
 }
 
-/* Ẩn tất cả các đường link menu ngoại trừ nút chuyển đổi giao diện (theme toggle) */
-.masthead__menu-item:not(:has(.fa-cog)):not(:has(.fa-sun)):not(:has(.fa-moon)):not(:has([title*="theme"])) {
+/* Ẩn tất cả các đường link chữ trên menu, trừ nút chứa icon bánh răng */
+.masthead__menu-item {
   display: none !important;
 }
 
-/* Trong trường hợp trình duyệt cũ không hỗ trợ :has, ẩn các chữ menu theo thẻ link */
-.masthead__menu-item a:not([href*="theme"]):not([onclick*="theme"]) {
-  display: none !important;
-}
-
-/* Đưa nút chuyển đổi chế độ sáng/tối sang góc phải */
-.masthead__menu {
+/* Chỉ hiển thị duy nhất phần tử chứa nút đổi giao diện sáng/tối */
+.masthead__menu-item:last-child,
+.masthead__menu-item:has(i),
+.masthead__menu-item:has(.fa-cog),
+.masthead__menu-item:has(.fa-gear) {
+  display: inline-block !important;
   float: right !important;
 }
 
-.masthead__menu-item {
-  display: inline-block !important;
-  margin: 0 !important;
+/* Định vị nút nằm gọn gàng ở góc phải */
+.masthead__menu {
+  float: right !important;
+  width: auto !important;
 }
 
   .academic-container {
