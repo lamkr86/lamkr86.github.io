@@ -72,14 +72,14 @@ permalink: /
     max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: auto !important;
-    padding-left: 2rem !important; /* Đ khoảng cách nhẹ với mép trái màn hình */
+    padding-left: 2rem !important;
   }
 
   .page__footer-follow ul {
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
-    justify-content: flex-start !important; /* Đưa các item sang hẳn bên trái */
+    justify-content: flex-start !important;
     align-items: center !important;
     gap: 6px !important;
   }
@@ -101,7 +101,7 @@ permalink: /
     display: none !important;
   }
 
-  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU (KHẮC PHỤC CHỮ MỜ) */
+  /* 3. TỐI ƯU DARK MODE CHUYÊN SÂU */
   html[data-theme="dark"] p,
   html[data-theme="dark"] li,
   html[data-theme="dark"] span,
@@ -133,7 +133,7 @@ permalink: /
     color: #ffffff !important;
   }
 
-  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH (CĂN GIỮA BÌNH THƯỜNG) */
+  /* 4. CẤU TRÚC CONTAINER & NỘI DUNG CHÍNH */
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
@@ -207,7 +207,7 @@ permalink: /
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
-  /* SECTION HEADING & KHOẢNG BÙ NỐI DÒNG TIÊU ĐỀ KHI CUỘN */
+  /* SECTION HEADING & KHOẢNG BÙ TẠO DỐC CUỘN DỪNG LẠI TRƯỚC TIÊU ĐỀ */
   .academic-container .section-heading {
     font-size: 11px;
     font-weight: 700;
@@ -218,7 +218,7 @@ permalink: /
     padding-bottom: 8px;
     margin-top: 40px;
     margin-bottom: 18px;
-    scroll-margin-top: 70px;
+    scroll-margin-top: 30px; /* Chừa khoảng trống phía trên tiêu đề khi cuộn đến */
   }
 
   /* Bảng Thẻ */
@@ -467,7 +467,7 @@ permalink: /
 
 </div>
 
-<!-- SCRIPT HỖ TRỢ CUỘN CHÍNH XÁC VÀO TIÊU ĐỀ NẾU TRANG WEB CÓ THANH HEADER ĐỘNG -->
+<!-- SCRIPT XỬ LÝ CUỘN MƯỢT VÀ DỪNG NGAY TRƯỚC TIÊU ĐỀ -->
 <script>
   document.querySelectorAll('.sub-nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -476,7 +476,8 @@ permalink: /
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
-        const offset = 65; // Khoảng đệm phía trên
+        // Khoảng chừa phía trên tiêu đề (tăng/giảm số này để chỉnh vị trí dừng)
+        const offset = 25; 
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - offset;
 
