@@ -229,7 +229,7 @@ permalink: /
     
     <div>
       <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
-        Pham Quang Lam
+        Pham Quang Lam <span class="txt-muted" style="font-size: 15px; font-weight: 400;">(팜광람)</span>
       </h1>
       <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 14px; line-height: 1.5; letter-spacing: -0.1px;">
         Master's Student · Division of Computer Engineering<br>
@@ -268,7 +268,7 @@ permalink: /
       <td class="txt-sub">2026 – Present</td>
       <td>
         <strong class="txt-main" style="font-size: 13.5px;">Hansung University Graduate School</strong><br>
-        <span class="txt-sub" style="font-size: 13px;">Master's Student, Division of Computer Engineering</span>
+        <span class="txt-sub" style="font-size: 13px;">Master's Degree in Computer Engineering</span>
       </td>
     </tr>
     <tr>
@@ -282,7 +282,7 @@ permalink: /
       <td class="txt-sub">2019 – 2021</td>
       <td>
         <strong class="txt-main" style="font-size: 13.5px;">Sahmyook Health University</strong><br>
-        <span class="txt-sub" style="font-size: 13px;">Associate Degree in Medical Information</span>
+        <span class="txt-sub" style="font-size: 13px;">Medical Information Department</span>
       </td>
     </tr>
   </table>
@@ -330,8 +330,8 @@ permalink: /
       <td class="txt-sub">Certifications</td>
       <td>
         <span class="txt-main" style="font-size: 13.5px;">• ITQ Information Technology Qualification (Grade A)</span><br>
-        <span class="txt-main" style="font-size: 13.5px;">• TOPIK (Test of Proficiency in Korean) Level 5</span><br>
-        <span class="txt-main" style="font-size: 13.5px;">• Social Integration Program (KIIP) Level 5</span>
+        <span class="txt-main" style="font-size: 13.5px;">• TOPIK Level 5</span><br>
+        <span class="txt-main" style="font-size: 13.5px;">• Social Integration Program Level 5</span>
       </td>
     </tr>
   </table>
