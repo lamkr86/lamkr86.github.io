@@ -15,9 +15,25 @@ permalink: /
     scroll-behavior: smooth;
   }
 
-  /* Giữ lại thanh masthead để chứa nút đổi theme */
+ /* Xóa đường kẻ dưới và bóng của thanh masthead, mở rộng full chiều rộng */
 .masthead {
   display: block !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 20px !important;
+  left: auto !important;
+  width: auto !important;
+  z-index: 1000 !important;
+}
+
+/* Xóa viền/đường kẻ bên trong khung masthead */
+.masthead__inner-wrap {
+  border-bottom: none !important;
+  padding: 0 !important;
+  max-width: 100% !important;
 }
 
 /* Ẩn tiêu đề trang Lam-Profile */
@@ -25,12 +41,11 @@ permalink: /
   display: none !important;
 }
 
-/* Ẩn tất cả các đường link chữ trên menu, trừ nút chứa icon bánh răng */
+/* Ẩn tất cả các menu ngoại trừ nút chuyển đổi giao diện */
 .masthead__menu-item {
   display: none !important;
 }
 
-/* Chỉ hiển thị duy nhất phần tử chứa nút đổi giao diện sáng/tối */
 .masthead__menu-item:last-child,
 .masthead__menu-item:has(i),
 .masthead__menu-item:has(.fa-cog),
@@ -39,7 +54,6 @@ permalink: /
   float: right !important;
 }
 
-/* Định vị nút nằm gọn gàng ở góc phải */
 .masthead__menu {
   float: right !important;
   width: auto !important;
