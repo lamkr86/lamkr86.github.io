@@ -45,6 +45,29 @@ permalink: /
   width: auto !important;
 }
 
+  /* Sửa màu chữ sáng rõ hơn trong chế độ tối (Dark Mode) */
+  html[data-theme="dark"] p,
+  html[data-theme="dark"] li,
+  html[data-theme="dark"] span,
+  body.dark p,
+  body.dark li,
+  body.dark span {
+    color: #c9d1d9 !important;
+  }
+
+  html[data-theme="dark"] strong,
+  html[data-theme="dark"] b,
+  body.dark strong,
+  body.dark b {
+    color: #ffffff !important;
+  }
+
+  html[data-theme="dark"] .academic-container td,
+  body.dark td {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: #e1e4e8 !important;
+  }
+  
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
