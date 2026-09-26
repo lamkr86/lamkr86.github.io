@@ -10,7 +10,7 @@ permalink: /
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
-  /* Cuộn mượt khi bấm vào menu nav */
+  /* Kích hoạt tự động cuộn mượt khi bấm vào nút điều hướng */
   html {
     scroll-behavior: smooth;
   }
@@ -27,18 +27,20 @@ permalink: /
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
 
-  /* SUB-NAVIGATION (THANH MENU TRÊN ĐẦU TRANG) */
+  /* -------------------------------------------------------------
+     THANH MENU NỘI BỘ (ĐÚNG DANH SÁCH: About, Publications, Teaching, Honors, PRISM Lab)
+     ------------------------------------------------------------- */
   .sub-nav {
     display: flex;
-    gap: 24px;
+    gap: 28px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     margin-bottom: 30px;
   }
 
   .sub-nav a {
     text-decoration: none !important;
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: 500;
     color: #64748b !important;
     transition: color 0.2s ease;
@@ -48,7 +50,9 @@ permalink: /
     color: #0f172a !important;
   }
 
-  /* STYLE DÙNG CHUNG */
+  /* -------------------------------------------------------------
+     CÁC THÀNH PHẦN KHÁC
+     ------------------------------------------------------------- */
   .header-flex {
     display: flex;
     align-items: center;
@@ -85,6 +89,7 @@ permalink: /
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
+  /* Section Header thanh thoát + Khoảng bù khi cuộn đến */
   .academic-container .section-heading {
     font-size: 11px;
     font-weight: 700;
@@ -93,11 +98,12 @@ permalink: /
     color: #0f172a !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     padding-bottom: 8px;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 18px;
-    scroll-margin-top: 20px;
+    scroll-margin-top: 25px; /* Giúp tiêu đề không bị dính sát mép trên màn hình khi cuộn tới */
   }
 
+  /* Bảng About */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
@@ -121,6 +127,7 @@ permalink: /
     font-weight: 600;
   }
 
+  /* Nút mạng xã hội Pill Button */
   .academic-container .social-icon-btn {
     height: 34px;
     padding: 0 14px;
@@ -216,15 +223,16 @@ permalink: /
 
 <div class="academic-container">
 
-  <!-- MENU CHUYỂN MỤC CUỘN MƯỢT -->
+  <!-- THANH THANH ĐIỀU HƯỚNG CHUẨN MỤC (NHƯ ẢNH MẪU) -->
   <div class="sub-nav">
     <a href="#about">About</a>
     <a href="#publications">Publications</a>
     <a href="#teaching">Teaching</a>
-    <a href="#projects">Projects & Activities</a>
+    <a href="#honors">Honors</a>
+    <a href="#prism-lab">PRISM Lab</a>
   </div>
 
-  <!-- HEADER -->
+  <!-- HEADER NỘI DUNG -->
   <div class="header-flex">
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
     
@@ -247,12 +255,12 @@ permalink: /
     </div>
   </div>
 
-  <!-- GIỚI THIỆU -->
+  <!-- GIỚI THIỆU CHUNG -->
   <p class="txt-sub" style="font-size: 14.5px; line-height: 1.7; margin-bottom: 25px; letter-spacing: -0.1px;">
     I am a Master's student in the Division of Computer Engineering at <strong class="txt-main">Hansung University</strong>. My current research focuses on software engineering, web technologies, and artificial intelligence.
   </p>
 
-  <!-- MỤC ABOUT -->
+  <!-- 1. MỤC ABOUT -->
   <div id="about" class="section-heading">ABOUT</div>
   <table class="styled-card-table">
     <tr>
@@ -264,25 +272,20 @@ permalink: /
     </tr>
   </table>
 
-  <!-- MỤC PUBLICATIONS -->
+  <!-- 2. MỤC PUBLICATIONS -->
   <div id="publications" class="section-heading">PUBLICATIONS</div>
   <p class="txt-sub" style="font-size: 13.5px;">Publications list will be updated soon.</p>
 
-  <!-- MỤC TEACHING -->
+  <!-- 3. MỤC TEACHING -->
   <div id="teaching" class="section-heading">TEACHING</div>
   <p class="txt-sub" style="font-size: 13.5px;">Teaching activities will be updated soon.</p>
 
-  <!-- MỤC PROJECTS -->
-  <div id="projects" class="section-heading">PROJECTS & ACTIVITIES</div>
-  <ul style="padding-left: 18px; margin: 0; line-height: 1.7;">
-    <li style="margin-bottom: 12px;">
-      <strong class="txt-main" style="letter-spacing: -0.2px;">Academic Personal Website</strong> <span class="txt-muted" style="font-size: 13px;">(2026)</span><br>
-      <span class="txt-sub" style="font-size: 13.5px; letter-spacing: -0.1px;">Designed and deployed a minimal academic profile hosted on GitHub Pages.</span>
-    </li>
-    <li>
-      <strong class="txt-main" style="letter-spacing: -0.2px;">Computer Engineering Coursework</strong><br>
-      <span class="txt-sub" style="font-size: 13.5px; letter-spacing: -0.1px;">Developing software projects and core algorithms at Hansung University.</span>
-    </li>
-  </ul>
+  <!-- 4. MỤC HONORS -->
+  <div id="honors" class="section-heading">HONORS</div>
+  <p class="txt-sub" style="font-size: 13.5px;">Honors and awards will be updated soon.</p>
+
+  <!-- 5. MỤC PRISM LAB -->
+  <div id="prism-lab" class="section-heading">PRISM LAB</div>
+  <p class="txt-sub" style="font-size: 13.5px;">PRISM Lab research details will be updated soon.</p>
 
 </div>
