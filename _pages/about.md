@@ -14,6 +14,16 @@ permalink: /
   html {
     scroll-behavior: smooth;
   }
+    /* Ẩn thanh menu trên cùng và tên trang, chỉ giữ lại nút đổi theme */
+  .masthead__menu-item:not(:last-child),
+  .site-title,
+  .masthead__menu-item a:not([title*="theme"]):not([class*="theme"]) {
+    display: none !important;
+  }
+
+  .masthead__menu {
+    float: right !important;
+  }
 
   .academic-container {
     max-width: 760px;
