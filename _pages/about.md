@@ -27,15 +27,25 @@ permalink: /
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
 
+  /* HEADER INFO */
+  .header-flex {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
   /* -------------------------------------------------------------
-     THANH MENU NỘI BỘ (ĐÚNG DANH SÁCH: About, Publications, Teaching, Honors, PRISM Lab)
+     THANH MENU NỘI BỘ (ĐẶT PHÍA DƯỚI HEADER)
      ------------------------------------------------------------- */
   .sub-nav {
     display: flex;
     gap: 28px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    padding-bottom: 14px;
-    margin-bottom: 30px;
+    padding-bottom: 12px;
+    margin-top: 10px;
+    margin-bottom: 25px;
   }
 
   .sub-nav a {
@@ -53,14 +63,6 @@ permalink: /
   /* -------------------------------------------------------------
      CÁC THÀNH PHẦN KHÁC
      ------------------------------------------------------------- */
-  .header-flex {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-  }
-
   .academic-container .txt-main,
   .academic-container h1,
   .academic-container strong {
@@ -98,9 +100,9 @@ permalink: /
     color: #0f172a !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     padding-bottom: 8px;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-bottom: 18px;
-    scroll-margin-top: 25px; /* Giúp tiêu đề không bị dính sát mép trên màn hình khi cuộn tới */
+    scroll-margin-top: 20px;
   }
 
   /* Bảng About */
@@ -223,16 +225,7 @@ permalink: /
 
 <div class="academic-container">
 
-  <!-- THANH THANH ĐIỀU HƯỚNG CHUẨN MỤC (NHƯ ẢNH MẪU) -->
-  <div class="sub-nav">
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#honors">Honors</a>
-    <a href="#prism-lab">PRISM Lab</a>
-  </div>
-
-  <!-- HEADER NỘI DUNG -->
+  <!-- HEADER NỘI DUNG PHÍA TRÊN -->
   <div class="header-flex">
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
     
@@ -253,6 +246,15 @@ permalink: /
         <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
+  </div>
+
+  <!-- THANH ĐIỀU HƯỚNG NẰM PHÍA DƯỚI ẢNH & THÔNG TIN CÁ NHÂN -->
+  <div class="sub-nav">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#honors">Honors</a>
+    <a href="#prism-lab">PRISM Lab</a>
   </div>
 
   <!-- GIỚI THIỆU CHUNG -->
