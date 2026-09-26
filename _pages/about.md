@@ -102,7 +102,7 @@ permalink: /
     scroll-margin-top: 20px;
   }
 
-  /* Bảng Thẻ Thẻ Thẻ */
+  /* Bảng Thẻ */
   .academic-container .styled-card-table {
     width: 100%;
     border-collapse: separate;
@@ -123,7 +123,7 @@ permalink: /
 
   .academic-container .styled-card-table td:first-child {
     width: 26%;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
   }
 
@@ -231,7 +231,7 @@ permalink: /
       <h1 class="txt-main" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
         Pham Quang Lam <span class="txt-muted" style="font-size: 15px; font-weight: 400;">(팜광람)</span>
       </h1>
-      <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 14.5px; line-height: 1.5; letter-spacing: -0.1px;">
+      <p class="txt-sub" style="margin: 6px 0 16px 0; font-size: 14px; line-height: 1.5; letter-spacing: -0.1px;">
         Master's Student · Division of Computer Engineering<br>
         <strong class="txt-main">Hansung University</strong>, Seoul, South Korea
       </p>
@@ -257,7 +257,7 @@ permalink: /
 
   <!-- 1. MỤC ABOUT -->
   <div id="about" class="section-heading">ABOUT</div>
-  <p class="txt-sub" style="font-size: 14.5px; line-height: 1.7; margin-bottom: 20px; letter-spacing: -0.1px;">
+  <p class="txt-sub" style="font-size: 13.5px; line-height: 1.6; margin-bottom: 20px; letter-spacing: -0.1px;">
     I am a Master's student in Computer Engineering at <strong class="txt-main">Hansung University</strong>. My background encompasses database management, data visualization, web development, and medical data optimization. I am passionate about applying data-driven approaches and modern web technologies to solve real-world engineering problems.
   </p>
 
@@ -267,22 +267,22 @@ permalink: /
     <tr>
       <td class="txt-sub">2026 – Present</td>
       <td>
-        <strong class="txt-main">Hansung University Graduate School</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px;">Master's Degree in Computer Engineering </span>
+        <strong class="txt-main" style="font-size: 13.5px;">Hansung University Graduate School</strong><br>
+        <span class="txt-sub" style="font-size: 13px;">Master's Degree in Computer Engineering </span>
       </td>
     </tr>
     <tr>
       <td class="txt-sub">2023 – 2025</td>
       <td>
-        <strong class="txt-main">Kwangwoon University</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px;">B.S. in Computer Information Engineering </span>
+        <strong class="txt-main" style="font-size: 13.5px;">Kwangwoon University</strong><br>
+        <span class="txt-sub" style="font-size: 13px;">B.S. in Computer Information Engineering </span>
       </td>
     </tr>
     <tr>
       <td class="txt-sub">2019 – 2021</td>
       <td>
-        <strong class="txt-main">Sahmyook Health University</strong><br>
-        <span class="txt-sub" style="font-size: 13.5px;">Medical Information Department </span>
+        <strong class="txt-main" style="font-size: 13.5px;">Sahmyook Health University</strong><br>
+        <span class="txt-sub" style="font-size: 13px;">Medical Information Department </span>
       </td>
     </tr>
   </table>
@@ -290,8 +290,8 @@ permalink: /
   <!-- 3. MỤC EXPERIENCE & PROJECTS -->
   <div id="experience" class="section-heading">EXPERIENCE & PROJECTS</div>
   
-  <p class="txt-main" style="font-weight: 600; font-size: 14.5px; margin-bottom: 8px;">Research & Project Experience</p>
-  <ul style="padding-left: 18px; margin-bottom: 20px; line-height: 1.6;" class="txt-sub">
+  <p class="txt-main" style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Research & Project Experience</p>
+  <ul style="padding-left: 18px; margin-bottom: 18px; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
     <li style="margin-bottom: 8px;">
       <strong class="txt-main">Database & Data Visualization Project:</strong>
       Large-scale data analysis & visualization system development; research on database optimization and search speed enhancement.
@@ -302,8 +302,8 @@ permalink: /
     </li>
   </ul>
 
-  <p class="txt-main" style="font-weight: 600; font-size: 14.5px; margin-bottom: 8px;">Practical Experience</p>
-  <ul style="padding-left: 18px; margin-bottom: 20px; line-height: 1.6;" class="txt-sub">
+  <p class="txt-main" style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Practical Experience</p>
+  <ul style="padding-left: 18px; margin-bottom: 20px; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
     <li style="margin-bottom: 6px;">
       <strong class="txt-main">Language Center Office, Sahmyook Health University:</strong> Vietnamese student info management & data systemization.
     </li>
@@ -320,25 +320,26 @@ permalink: /
   <table class="styled-card-table">
     <tr>
       <td class="txt-sub">Programming</td>
-      <td><span class="txt-main">C, C++, JavaScript, PHP</span></td>
+      <td><span class="txt-main" style="font-size: 13.5px;">C, C++, JavaScript, PHP</span></td>
     </tr>
     <tr>
       <td class="txt-sub">Database & Network</td>
-      <td><span class="txt-main">SQL, Database Optimization, Network Traffic Analysis</span></td>
+      <td><span class="txt-main" style="font-size: 13.5px;">SQL, Database Optimization, Network Traffic Analysis</span></td>
     </tr>
     <tr>
       <td class="txt-sub">Certifications</td>
       <td>
-        <span class="txt-main">• ITQ Information Technology Qualification (Grade A)</span><br>
-        <span class="txt-main">• TOPIK Level 5 (한국어능력시험 5급)</span><br>
-        <span class="txt-main">• Social Integration Program Level 5 (사회통합프로그램 5단계)</span>
+        <span class="txt-main" style="font-size: 13.5px;">• ITQ Information Technology Qualification (Grade A)</span><br>
+        <span class="txt-main" style="font-size: 13.5px;">• TOPIK Level 5 </span><br>
+        <span class="txt-main" style="font-size: 13.5px;">• Social Integration Program Level 5 </span>
       </td>
     </tr>
   </table>
 
-  <!-- 5. MỤC ACTIVITIES -->
+  <!-- 5. MỤC ACTIVITIES (ĐÃ ĐỒNG BỘ CỠ CHỮ 13.5PX VÀ KIỂU TIÊU ĐỀ) -->
   <div id="activities" class="section-heading">ACTIVITIES</div>
-  <ul style="padding-left: 18px; margin: 0; line-height: 1.6;" class="txt-sub">
+  <p class="txt-main" style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Volunteer Experience</p>
+  <ul style="padding-left: 18px; margin: 0; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
     <li style="margin-bottom: 8px;">
       <strong class="txt-main">Sahmyook Medical Center Daycare Center Volunteer:</strong> Medical system data management and social contribution.
     </li>
