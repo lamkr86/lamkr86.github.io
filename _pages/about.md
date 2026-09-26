@@ -206,7 +206,7 @@ permalink: /
 
 <div class="academic-container">
 
-  <-- HEADER -->
+  <!-- HEADER -->
   <div class="header-flex">
     <img src="/profile.jpg" alt="Pham Quang Lam" class="avatar-img">
     
