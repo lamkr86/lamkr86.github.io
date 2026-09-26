@@ -15,6 +15,36 @@ permalink: /
     scroll-behavior: smooth;
   }
 
+  /* Giữ lại thanh masthead để chứa nút đổi theme */
+.masthead {
+  display: block !important;
+}
+
+/* Ẩn tiêu đề trang Lam-Profile */
+.site-title {
+  display: none !important;
+}
+
+/* Ẩn tất cả các đường link chữ trên menu, trừ nút chứa icon bánh răng */
+.masthead__menu-item {
+  display: none !important;
+}
+
+/* Chỉ hiển thị duy nhất phần tử chứa nút đổi giao diện sáng/tối */
+.masthead__menu-item:last-child,
+.masthead__menu-item:has(i),
+.masthead__menu-item:has(.fa-cog),
+.masthead__menu-item:has(.fa-gear) {
+  display: inline-block !important;
+  float: right !important;
+}
+
+/* Định vị nút nằm gọn gàng ở góc phải */
+.masthead__menu {
+  float: right !important;
+  width: auto !important;
+}
+
   .academic-container {
     max-width: 760px;
     margin: 0 auto;
