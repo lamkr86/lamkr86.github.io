@@ -392,7 +392,7 @@ permalink: /
       <td class="txt-sub">2023 – 2025</td>
       <td>
         <strong class="txt-main" style="font-size: 13.5px;">Kwangwoon University</strong><br>
-        <span class="txt-sub" style="font-size: 13px;">B.S. in Computer Information Engineering</span>
+        <span class="txt-sub" style="font-size: 13px;">Computer Engineering</span>
       </td>
     </tr>
     <tr>
