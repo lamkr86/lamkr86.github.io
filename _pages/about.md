@@ -440,7 +440,7 @@ permalink: /
       <td><span class="txt-main" style="font-size: 13.5px;">C, C++, JavaScript, PHP</span></td>
     </tr>
     <tr>
-      <td class="txt-sub">Database & Network</td>
+      <td class="txt-sub">Database</td>
       <td><span class="txt-main" style="font-size: 13.5px;">SQL, Database Optimization</span></td>
     </tr>
     <tr>
