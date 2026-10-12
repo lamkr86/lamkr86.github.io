@@ -375,7 +375,7 @@ permalink: /
 
   <!-- PHẦN GIỚI THIỆU NGẮN (XUẤT HIỆN NGAY DƯỚI THANH MENU) -->
   <p class="txt-sub" style="font-size: 13.5px; line-height: 1.6; margin-bottom: 25px; letter-spacing: -0.1px;">
-    I am a Master's student in Computer Engineering at <strong class="txt-main">Hansung University</strong>. My background encompasses database management, data visualization, web development, and medical data optimization. I am passionate about applying data-driven approaches and modern web technologies to solve real-world engineering problems.
+    I am a Master's student in Computer Engineering at <strong class="txt-main">Hansung University</strong>. My background encompasses database management, data visualization, web development. I am passionate about applying data-driven approaches and modern web technologies to solve real-world engineering problems.
   </p>
 
   <!-- 1. MỤC ABOUT (Bao gồm bảng Bằng cấp/Học vấn) -->
@@ -411,7 +411,7 @@ permalink: /
   <ul style="padding-left: 18px; margin-bottom: 18px; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
     <li style="margin-bottom: 8px;">
       <strong class="txt-main">Database & Data Visualization Project:</strong>
-      Large-scale data analysis & visualization system development; research on database optimization and search speed enhancement.
+      Research on database optimization and search speed enhancement.
     </li>
     <li>
       <strong class="txt-main">Web System Development Project:</strong>
@@ -441,12 +441,11 @@ permalink: /
     </tr>
     <tr>
       <td class="txt-sub">Database & Network</td>
-      <td><span class="txt-main" style="font-size: 13.5px;">SQL, Database Optimization, Network Traffic Analysis</span></td>
+      <td><span class="txt-main" style="font-size: 13.5px;">SQL, Database Optimization</span></td>
     </tr>
     <tr>
       <td class="txt-sub">Certifications</td>
       <td>
-        <span class="txt-main" style="font-size: 13.5px;">• ITQ Information Technology Qualification (Grade A)</span><br>
         <span class="txt-main" style="font-size: 13.5px;">• TOPIK Level 5</span><br>
         <span class="txt-main" style="font-size: 13.5px;">• Social Integration Program Level 5</span>
       </td>
@@ -459,9 +458,6 @@ permalink: /
   <ul style="padding-left: 18px; margin: 0; line-height: 1.6; font-size: 13.5px;" class="txt-sub">
     <li style="margin-bottom: 8px;">
       <strong class="txt-main">Sahmyook Medical Center Daycare Center Volunteer:</strong> Medical system data management and social contribution.
-    </li>
-    <li>
-      <strong class="txt-main">Bapfor Sharing Movement Volunteer:</strong> Data-driven operation management and community service participation.
     </li>
   </ul>
 
